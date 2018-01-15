@@ -1,0 +1,48 @@
+body {
+    padding-top: 30px;
+}
+
+.top-cta {
+    background: $base-dark;
+    color: $base-dark-gray;
+    height: 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+    @include flex(flex-end, center, row);
+    h6 {
+        display: none;
+        @include screen(sm) {
+            display: block;
+        }
+    }
+    .top-cta-wrap {
+        @include screen(xs) {
+            @include flex(flex-end, center, row);
+        }
+        @include screen(sm) {
+            @include flex(space-between, center, row);
+        }
+        @include screen(md) {
+            @include flex(space-between, center, row);
+        }
+        .questions-wrap {
+            @include flex(space-between, center, row);
+            a {
+                @include flex(space-between, center, row);
+                color: #fff;
+                font-family: $header-font;
+                font-size: 11px;
+                margin-left: 5px;
+                h6 {
+                    margin-right: 5px;
+                }
+            }
+            .divider {
+                margin: 0 5px;
+                font-size: 9px;
+            }
+        }
+    }
+}

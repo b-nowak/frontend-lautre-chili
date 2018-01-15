@@ -1,0 +1,344 @@
+section {
+    padding: 0 15px;
+    .thumbnails-wrap {
+        padding: 20px 0 25px;
+        @include screen(sm) {
+            padding: 20px 0 50px;
+            min-height: 200px;
+        }
+        .thumbnail {
+            padding: 0 0 15px 0;
+            border: none;
+            border-radius: 0;
+            background: $base-light-gray;
+            .image-holder {
+                width: 100%;
+                min-height: 300px;
+                background: url('https://picsum.photos/800/600/?random') no-repeat;
+                background-position: 50% 50%;
+                background-size: cover;
+                @include screen(sm) {
+                    min-height: 200px;
+                }
+            }
+            .caption {
+                padding: 10px 20px;
+                p {
+                    .btn-uppercased {
+                        color: $base-dark;
+                        &:hover {
+                            background: none;
+                            color: $base-blue;
+                        }
+                        &:focus {
+                            background: none;
+                            color: $base-blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.recommandations {
+        background: #fff;
+    }
+    &.blog {
+        background: $base-dark-gray;
+        .btn-blog-wrap {
+            margin: 20px 0 0;
+            @include flex(center,
+            center,
+            row);
+        }
+    }
+    &.pourquoi {
+        display: none;
+        @include screen(sm) {
+            display: block;
+        }
+        .thumbnails-wrap {
+            .thumbnail {
+                background: none;
+                .image-holder {
+                    @include screen(sm) {
+                        width: 100%;
+                        min-height: 70px;
+                        background-position: 50% 50%;
+                        background-size: cover;
+                    }
+                    &.icon-q {
+                        background: url('../../img/01.png') 50% 50% no-repeat;
+                    }
+                    &.icon-w {
+                        background: url('../../img/02.png') 50% 50% no-repeat;
+                    }
+                    &.icon-e {
+                        background: url('../../img/03.png') 50% 50% no-repeat;
+                    }
+                    &.icon-r {
+                        background: url('../../img/04.png') 50% 50% no-repeat;
+                    }
+                }
+                .caption {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    &.breadcrumbs {
+        .breadcrumbs-wrap {
+            @include flex(flex-start,
+            center,
+            row);
+            padding: 7px 0;
+            .breadcrumbs-home {
+                display: block;
+                margin: 0;
+                padding: 0 5px 0 0;
+                font-size: 13px;
+                text-transform: uppercase;
+                font-weight: $bold;
+                flex-flow: $base-font;
+            }
+            span {
+                i {
+                    font-size: 10px;
+                    padding: 0 5px 0 0;
+                }
+            }
+            p {
+                display: block;
+                margin: 0;
+                padding: 0 5px 0 0;
+                font-size: 12px;
+            }
+        }
+    }
+    &.trip-list {
+        .thumbnails-wrap {
+            .thumbnail {
+                padding: 0;
+                @include screen(sm) {
+                    @include flex(flex-start,
+                    flex-start,
+                    row);
+                }
+                .image-holder {
+                    flex: 2;
+                    min-height: 190px;
+                    @include screen(xs) {
+                        flex: 2;
+                        min-height: 210px;
+                    }
+                    @include screen(sm) {
+                        flex: 1;
+                        height: 250px;
+                    }
+                }
+                .caption {
+                    flex: 2;
+                    .title-wrap {
+                        @include flex(center,
+                        center,
+                        column);
+                        @include screen(sm) {
+                            @include flex(space-between,
+                            flex-start,
+                            row);
+                        }
+                        h4 {
+                            @include flex(center,
+                            center,
+                            column);
+                            text-align: center;
+                            font-size: 23px;
+                            line-height: 1.2;
+                            @include screen(sm) {
+                                @include flex(center,
+                                flex-start,
+                                column);
+                                flex: 2;
+                                text-align: left;
+                            }
+                            @include screen(md) {
+                                flex: 3;
+                            }
+                            @include screen(lg) {
+                                flex: 4;
+                            }
+                            .subtitle {
+                                font-family: $base-font;
+                                font-size: 16px;
+                                color: $base-brown;
+                                padding-top: 5px;
+                            }
+                        }
+                        .price-wrap {
+                            @include flex(center,
+                            center,
+                            column);
+                            padding: 20px 0 25px;
+                            @include screen(sm) {
+                                flex: 1;
+                                @include flex(flex-start,
+                                flex-end,
+                                column);
+                                padding: 0;
+                                margin-top: 8px;
+                            }
+                            .price {
+                                font-weight: $bold;
+                                font-family: $base-font;
+                                display: block;
+                                margin: 0;
+                                padding: 0;
+                                line-height: 1.1;
+                                font-size: 26px;
+                                float: left;
+                            }
+                            .currency {
+                                font-weight: $bold;
+                                font-family: $base-font;
+                                display: block;
+                                margin: 0;
+                                padding: 0 0 0 5px;
+                                font-size: 26px;
+                                float: right;
+                            }
+                            .price-info {
+                                color: $base-brown;
+                                display: block;
+                                line-height: 1.1;
+                                margin: 0;
+                                padding: 0;
+                            }
+                        }
+                    }
+                    .trip-details {
+                        @include flex(center,
+                        center,
+                        column);
+                        span {
+                            display: none;
+                            @include screen(sm) {
+                                display: block;
+                            }
+                        }
+                        @include screen(sm) {
+                            @include flex(flex-start,
+                            center,
+                            row);
+                        }
+                        padding: 0 0 5px 0;
+                        h5 {
+                            display: block;
+                            margin: 0;
+                            padding: 5px 0;
+                            font-size: 13px;
+                            font-family: $base-font;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.single-trip {
+        .thumbnails-wrap {
+            .thumbnail {
+                padding: 0;
+                background: none;
+                @include screen(sm) {
+                    @include flex(flex-start,
+                    flex-start,
+                    row);
+                }
+                .image-holder {
+                    flex: 2;
+                    min-height: 190px;
+                    @include screen(xs) {
+                        flex: 2;
+                        min-height: 210px;
+                    }
+                    @include screen(sm) {
+                        flex: 1;
+                        height: 250px;
+                    }
+                }
+                .caption {
+                    flex: 2;
+                    .title-wrap {
+                        @include flex(center,
+                        center,
+                        column);
+                        @include screen(sm) {
+                            @include flex(space-between,
+                            flex-start,
+                            row);
+                        }
+                        h4 {
+                            @include flex(center,
+                            center,
+                            column);
+                            text-align: center;
+                            font-size: 25px;
+                            line-height: 1.2;
+                            @include screen(sm) {
+                                @include flex(center,
+                                flex-start,
+                                column);
+                                flex: 2;
+                                font-size: 28px;
+                                text-align: left;
+                            }
+                            @include screen(md) {
+                                flex: 3;
+                            }
+                            @include screen(lg) {
+                                flex: 4;
+                            }
+                            .subtitle {
+                                font-family: $header-font;
+                                font-size: 16px;
+                                color: $base-brown;
+                                padding-top: 5px;
+                            }
+                        }
+                        .price-wrap {
+                            @include flex(center,
+                            center,
+                            column);
+                            padding: 20px 0 25px;
+                            @include screen(sm) {
+                                //flex: 1;
+                                @include flex(center,
+                                center,
+                                column);
+                                padding: 0;
+                                margin-top: 8px;
+                            }
+                            .price {
+                                font-weight: $bold;
+                                font-family: $base-font;
+                                display: block;
+                                margin: 0;
+                                padding: 0 0 3px;
+                                line-height: 1.1;
+                                font-size: 26px;
+                                float: left;
+                            }
+                            .currency {
+                                font-weight: $bold;
+                                font-family: $base-font;
+                                display: block;
+                                margin: 0;
+                                padding: 0 0 3px 5px;
+                                font-size: 26px;
+                                float: right;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

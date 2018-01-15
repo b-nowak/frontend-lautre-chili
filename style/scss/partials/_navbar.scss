@@ -1,0 +1,219 @@
+.navbar {
+    margin-bottom: 0;
+    .navbar-brand {
+        float: left;
+        height: auto;
+        padding: 15px 15px;
+        font-size: 18px;
+        line-height: 20px;
+        &:hover {
+            opacity: 1;
+        }
+        img {
+            height: 50px;
+        }
+    }
+    .navbar-toggle {
+        padding: 20px 0;
+        .icon-bar {
+            display: block;
+            width: 22px;
+            height: 2px;
+            border-radius: 1px;
+            background: $base-dark;
+        }
+    }
+    .nav {
+        .open {
+            a,
+            a:focus,
+            a:hover {
+                background: none;
+                border: none;
+            }
+        }
+    }
+    .navbar-centered {
+        @include screen(sm) {
+            @include flex(flex-end, center, row);
+        }
+        @include screen(lg) {
+            @include flex(center, center, row);
+            margin-right: 104px;
+        }
+        .navbar-nav {
+            @include screen(sm) {
+                height: 100%;
+            }
+            li {
+                a {
+                    @include flex(space-between, center, row);
+                    color: $base-dark;
+                    font-size: 15px;
+                    text-transform: none;
+                    transition: none;
+                    &:hover {
+                        background: lighten($base-dark, 12%);
+                        color: $base-light-gray;
+                        opacity: 1;
+                    }
+                    &[aria-expanded="true"] {
+                        background: lighten($base-dark, 10%);
+                        color: $base-light-gray;
+                        opacity: 1;
+                    }
+                    @include screen(sm) {
+                        padding-top: 30px;
+                        padding-bottom: 30px;
+                        transition: all .2s;
+                        &:hover,
+                        &:focus {
+                            background: none;
+                            color: $base-blue;
+                        }
+                        i {
+                            font-size: 12px;
+                        }
+                        &[aria-expanded="true"] {
+                            background: none;
+                            color: $base-blue;
+                        }
+                    }
+                    p {
+                        margin: 0 5px 0 0;
+                    }
+                }
+                &.dropdown {
+                    .dropdown-menu {
+                        @media (max-width: 768px) {
+                            overflow: hidden;
+                        }
+                        &.offscreen {
+                            @media (min-width: 768px) and (max-width: 1200px) {
+                                right: 0;
+                                left: auto;
+                            }
+                            &.middle {
+                                @media (min-width: 768px) and (max-width: 992px) {
+                                    right: -210px;
+                                }
+                            }
+                        }
+                        .dropdown-header {
+                            display: none;
+                        }
+                        a {
+                            &:hover {
+                                background: none;
+                                color: $base-blue;
+                            }
+                            i {
+                                display: none;
+                            }
+                        }
+                        &.wide {
+                            .drop-col {
+                                li {
+                                    a {
+                                        .nav-group-link {
+                                            li {
+                                                padding: 5px 15px 5px 25px;
+                                                line-height: 20px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        @include screen(sm) {
+                            padding: 0 0 8px 0;
+                            min-width: 270px;
+                            margin-top: -15px;
+                            margin-left: 15px;
+                            box-shadow: none;
+                            border: none;
+                            &.wide {
+                                min-width: 610px;
+                                .drop-col {
+                                    li {
+                                        a {
+                                            padding: 8px 10px;
+                                            transition: none;
+                                            .nav-group-link {
+                                                width: 100%;
+                                                padding-bottom: 8px;
+                                                border: 1px solid #fff;
+                                                transition: none;
+                                                li {
+                                                    padding: 2px 12px 2px 43px;
+                                                    font-size: 13px;
+                                                    font-family: "Open Sans", sans-serif;
+                                                    background: url("../../img/dot.svg") 29px 10px no-repeat;
+                                                    background-size: 3px;
+                                                    &.header {
+                                                        transition: all .2s;
+                                                        padding: 5px 10px;
+                                                        margin-bottom: 5px;
+                                                        font-size: 15px;
+                                                        background: none;
+                                                        font-family: $header-font;
+                                                    }
+                                                }
+                                            }
+                                            &:hover,
+                                            &:focus {
+                                                .nav-group-link {
+                                                    border: 1px solid #eee;
+                                                    color: $base-dark;
+                                                }
+                                                li {
+                                                    &.header {
+                                                        background: $base-dark-gray;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            a {
+                                font-family: $header-font;
+                                padding: 8px 25px;
+                                font-size: 14px;
+                                text-transform: none;
+                                @include flex(flex-start,
+                                center,
+                                row);
+                                i {
+                                    display: inline-block;
+                                    margin-right: 5px;
+                                    font-size: 9px;
+                                }
+                            }
+                            .dropdown-header {
+                                background: $base-dark;
+                                font-size: 14px;
+                                color: #fff;
+                                padding: 10px 15px;
+                                margin-bottom: 8px;
+                                font-family: $header-font;
+                                @include flex(flex-start,
+                                center,
+                                row);
+                                i {
+                                    display: inline-block;
+                                    margin-right: 8px;
+                                }
+                            }
+                        }
+                        @include screen(lg) {
+                            &.wide {
+                                min-width: 605px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

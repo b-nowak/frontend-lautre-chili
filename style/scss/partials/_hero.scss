@@ -1,0 +1,124 @@
+.hero {
+    background-image: url('../../img/bg.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    @include screen(sm) {
+        min-height: 600px;
+        @include flex(flex-start,
+        center,
+        row);
+    }
+    .hero-text-wrap {
+        text-align: center;
+        height: auto;
+        background: rgba($base-dark, .9);
+        margin: 0 -15px;
+        color: white;
+        padding: 35px 25px;
+        @include screen(xs) {
+            padding: 40px 30px 30px;
+            text-align: left;
+            @include flex(flex-start,
+            flex-start,
+            column);
+        }
+        @include screen(sm) {
+            margin: 0;
+        }
+        h2 {
+            display: block;
+            margin: 0 0 5px;
+        }
+        span {
+            display: block;
+            width: 70px;
+            height: 2px;
+            background: $base-brown;
+            margin: 20px auto 15px;
+            @include screen(xs) {
+                margin: 20px 0 15px;
+            }
+        }
+        p {
+            display: block;
+            margin: 0 0 20px;
+            font-size: 13px; //text-align: justify;
+            @include screen(xs) {
+                font-size: 16px;
+            }
+        }
+        .btn-uppercased {
+            @include screen(xs) {
+                align-self: flex-end;
+            }
+        }
+    }
+    &.full-height {
+        min-height: auto;
+        .hero-text-wrap {
+            @include screen(sm) {
+                min-height: 400px;
+                padding: 60px 30px;
+            }
+        }
+    }
+    &.full-width {
+        background: linear-gradient( rgba($base-dark, 0.82), rgba($base-dark, 0.82)), url('../../img/bg.jpg');
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        .hero-text-wrap {
+            background: none;
+            @include screen(sm) {
+                min-height: auto;
+                padding: 35px 0;
+            }
+            h2 {
+                font-family: $base-font;
+                font-weight: 300;
+                font-size: 24px;
+                text-transform: uppercase;
+                @include flex(flex-start,
+                center,
+                row);
+                p {
+                    display: block;
+                    padding: 0 5px 0 2px;
+                    margin: 0;
+                }
+                strong {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+.hero-img-caption {
+    display: none;
+    @include screen(sm) {
+        display: block;
+        width: 100%;
+        height: 30px;
+        background: rgba($base-dark, .5);
+        margin-top: -30px;
+        @include flex(flex-end,
+        center,
+        row);
+        .hero-img-wrap {
+            @include flex(flex-end,
+            center,
+            row);
+            p {
+                font-size: 12px;
+                color: #C3C4C6;
+                display: block;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,89 @@
+footer {
+    .pre-footer-wrap {
+        background: $base-dark;
+        padding: 0 0 20px 0;
+        .btn-newsletter-wrap {
+            @include flex(center, center, row);
+        }
+        ul {
+            li {
+                a {
+                    color: darken(#fff, 15%);
+                    font-size: 12px;
+                    line-height: 25px;
+                    padding-left: 20px;
+                    background: url("../../img/dot-white.svg") 4px 12px no-repeat;
+                    background-size: 3px;
+                    display: block;
+                }
+                &.mobile-footer-link {
+                    @media screen and (max-width: 992px) {
+                        text-align: center;
+                        a {
+                            background: none;
+                            font-size: 16px;
+                            padding: 0;
+                            font-family: $header-font;
+                        }
+                    }
+                }
+                &.header {
+                    p {
+                        color: #fff;
+                        font-size: 13px;
+                        font-family: $header-font;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            &.contact {
+                li {
+                    a {
+                        background: none;
+                        font-size: 13px;
+                        font-weight: $bold;
+                        color: #fff;
+                        display: block;
+                        padding: 5px 17px;
+                        margin-right: 20px;
+                        margin-bottom: 8px;
+                        border: 1px solid #fff;
+                        @include flex(space-between,
+                        center,
+                        row);
+                        i {
+                            font-size: 11px;
+                        }
+                    }
+                    &.social {
+                        @include flex(flex-start,
+                        center,
+                        row);
+                        a {
+                            border: none;
+                            padding: 0;
+                            margin: 15px 15px 0 0;
+                            i {
+                                font-size: 28px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-wrap {
+        background: darken($base-dark, 5%);
+        @include flex(center,
+        center,
+        row);
+        p {
+            font-family: $header-font;
+            color: darken($base-dark-gray, 20%);
+            font-size: 11px;
+            padding: 10px 0;
+            margin: 0;
+            display: block;
+        }
+    }
+}

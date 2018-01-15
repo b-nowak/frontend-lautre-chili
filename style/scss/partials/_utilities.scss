@@ -1,0 +1,54 @@
+.m0-i-sm {
+    @media screen and (min-width: 992px) {
+        margin: 0!important;
+    }
+}
+
+.p0-i-sm {
+    @media screen and (min-width: 992px) {
+        padding: 0!important;
+    }
+}
+
+.pr0-i-md {
+    @media screen and (min-width: 1200px) {
+        padding-right: 0!important;
+    }
+}
+
+.pl0-i-md {
+    @media screen and (min-width: 1200px) {
+        padding-left: 0!important;
+    }
+}
+
+.pr0-i-xs {
+    @media screen and (min-width: 768px) {
+        padding-right: 0!important;
+    }
+}
+
+.pl0-i-xs {
+    @media screen and (min-width: 768px) {
+        padding-left: 0!important;
+    }
+}
+
+.w100 {
+    width: 100%;
+}
+
+.w120 {
+    width: 120px;
+}
+
+.dash {
+    display: block;
+    width: 70px;
+    height: 2px;
+    background: $base-brown;
+    margin: 15px auto 15px;
+    @include screen(xs) {
+        margin: 15px 0 15px;
+    }
+}
