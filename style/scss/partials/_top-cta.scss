@@ -1,11 +1,11 @@
 body {
-    padding-top: 30px;
+    padding-top: 35px;
 }
 
 .top-cta {
     background: $base-dark;
     color: $base-dark-gray;
-    height: 30px;
+    height: 35px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -33,7 +33,7 @@ body {
                 @include flex(space-between, center, row);
                 color: #fff;
                 font-family: $header-font;
-                font-size: 11px;
+                font-size: 12px;
                 margin-left: 5px;
                 h6 {
                     margin-right: 5px;

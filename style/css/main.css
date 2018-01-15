@@ -6,66 +6,138 @@
     src: url('../../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
  */
-/* line 11, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_typography.scss */
+/* line 11, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_typography.scss */
 body {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* line 2, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_headers.scss */
+/* line 2, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_carousel.scss */
+.pc-carousel .carousel-indicators {
+  bottom: 25px;
+}
+
+/* line 4, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_carousel.scss */
+.pc-carousel .carousel-indicators li {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000\9;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 12px;
+}
+
+/* line 15, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_carousel.scss */
+.pc-carousel .carousel-indicators li.active {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+}
+
+/* line 22, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_carousel.scss */
+.pc-carousel .carousel-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  background: rgba(30, 35, 48, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+@media only screen and (min-width: 992px) {
+  /* line 22, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_carousel.scss */
+  .pc-carousel .carousel-caption {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+/* line 39, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_carousel.scss */
+.pc-carousel .carousel-caption p {
+  color: #e9e9e9;
+  margin: 3px 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 992px) {
+  /* line 39, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_carousel.scss */
+  .pc-carousel .carousel-caption p {
+    margin: 3px 10px 3px 0;
+  }
+}
+
+/* line 2, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_headers.scss */
 h1 {
   font-family: "Bitter", serif;
   font-weight: 400;
 }
 
-/* line 2, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_headers.scss */
+/* line 2, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_headers.scss */
 h2 {
   font-family: "Bitter", serif;
   font-weight: 400;
 }
 
-/* line 2, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_headers.scss */
+/* line 2, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_headers.scss */
 h3 {
   font-family: "Bitter", serif;
   font-weight: 400;
 }
 
-/* line 2, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_headers.scss */
+/* line 2, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_headers.scss */
 h4 {
   font-family: "Bitter", serif;
   font-weight: 400;
 }
 
-/* line 2, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_headers.scss */
+/* line 2, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_headers.scss */
 h5 {
   font-family: "Bitter", serif;
   font-weight: 400;
 }
 
-/* line 8, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_headers.scss */
+/* line 8, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_headers.scss */
 h2 {
   font-size: 30px;
 }
 
 @media only screen and (min-width: 480px) {
-  /* line 8, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_headers.scss */
+  /* line 8, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_headers.scss */
   h2 {
     font-size: 36px;
   }
 }
 
-/* line 15, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_headers.scss */
+/* line 15, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_headers.scss */
 h3 {
   font-size: 25px;
+  color: #1a1e2a;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 15, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_headers.scss */
+  /* line 15, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_headers.scss */
   h3 {
     font-size: 30px;
   }
 }
 
-/* line 20, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_headers.scss */
+/* line 21, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_headers.scss */
 h3.title {
   display: block;
   width: 100%;
@@ -73,42 +145,42 @@ h3.title {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 20, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_headers.scss */
+  /* line 21, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_headers.scss */
   h3.title {
     margin: 50px 0 20px;
   }
 }
 
-/* line 30, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_headers.scss */
+/* line 31, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_headers.scss */
 h4 {
   font-size: 16px;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 30, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_headers.scss */
+  /* line 31, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_headers.scss */
   h4 {
     font-size: 19px;
   }
 }
 
-/* line 37, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_headers.scss */
+/* line 38, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_headers.scss */
 h6 {
-  font-size: 10px;
+  font-size: 12px;
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
 
-/* line 1, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_top-cta.scss */
+/* line 1, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_top-cta.scss */
 body {
-  padding-top: 30px;
+  padding-top: 35px;
 }
 
-/* line 5, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_top-cta.scss */
+/* line 5, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_top-cta.scss */
 .top-cta {
   background: #1E2330;
   color: #EFEFEF;
-  height: 30px;
+  height: 35px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -119,20 +191,20 @@ body {
   flex-direction: row;
 }
 
-/* line 14, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_top-cta.scss */
+/* line 14, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_top-cta.scss */
 .top-cta h6 {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 14, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_top-cta.scss */
+  /* line 14, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_top-cta.scss */
   .top-cta h6 {
     display: block;
   }
 }
 
 @media only screen and (min-width: 480px) {
-  /* line 20, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_top-cta.scss */
+  /* line 20, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_top-cta.scss */
   .top-cta .top-cta-wrap {
     display: flex;
     justify-content: flex-end;
@@ -142,7 +214,7 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 20, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_top-cta.scss */
+  /* line 20, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_top-cta.scss */
   .top-cta .top-cta-wrap {
     display: flex;
     justify-content: space-between;
@@ -152,7 +224,7 @@ body {
 }
 
 @media only screen and (min-width: 992px) {
-  /* line 20, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_top-cta.scss */
+  /* line 20, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_top-cta.scss */
   .top-cta .top-cta-wrap {
     display: flex;
     justify-content: space-between;
@@ -161,7 +233,7 @@ body {
   }
 }
 
-/* line 30, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_top-cta.scss */
+/* line 30, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_top-cta.scss */
 .top-cta .top-cta-wrap .questions-wrap {
   display: flex;
   justify-content: space-between;
@@ -169,7 +241,7 @@ body {
   flex-direction: row;
 }
 
-/* line 32, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_top-cta.scss */
+/* line 32, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_top-cta.scss */
 .top-cta .top-cta-wrap .questions-wrap a {
   display: flex;
   justify-content: space-between;
@@ -177,38 +249,38 @@ body {
   flex-direction: row;
   color: #fff;
   font-family: "Bitter", serif;
-  font-size: 11px;
+  font-size: 12px;
   margin-left: 5px;
 }
 
-/* line 38, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_top-cta.scss */
+/* line 38, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_top-cta.scss */
 .top-cta .top-cta-wrap .questions-wrap a h6 {
   margin-right: 5px;
 }
 
-/* line 42, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_top-cta.scss */
+/* line 42, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_top-cta.scss */
 .top-cta .top-cta-wrap .questions-wrap .divider {
   margin: 0 5px;
   font-size: 9px;
 }
 
-/* line 1, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_links.scss */
+/* line 1, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_links.scss */
 a {
   transition: all .4s;
 }
 
-/* line 3, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_links.scss */
+/* line 3, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_links.scss */
 a:hover {
   text-decoration: none;
   opacity: .85;
 }
 
-/* line 1, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+/* line 1, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
 .navbar {
   margin-bottom: 0;
 }
 
-/* line 3, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+/* line 3, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
 .navbar .navbar-brand {
   float: left;
   height: auto;
@@ -217,22 +289,22 @@ a:hover {
   line-height: 20px;
 }
 
-/* line 9, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+/* line 9, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
 .navbar .navbar-brand:hover {
   opacity: 1;
 }
 
-/* line 12, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+/* line 12, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
 .navbar .navbar-brand img {
   height: 50px;
 }
 
-/* line 16, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+/* line 16, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
 .navbar .navbar-toggle {
   padding: 20px 0;
 }
 
-/* line 18, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+/* line 18, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
 .navbar .navbar-toggle .icon-bar {
   display: block;
   width: 22px;
@@ -241,7 +313,7 @@ a:hover {
   background: #1E2330;
 }
 
-/* line 28, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+/* line 28, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
 .navbar .nav .open a,
 .navbar .nav .open a:focus,
 .navbar .nav .open a:hover {
@@ -250,7 +322,7 @@ a:hover {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 36, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+  /* line 36, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
   .navbar .navbar-centered {
     display: flex;
     justify-content: flex-end;
@@ -260,7 +332,7 @@ a:hover {
 }
 
 @media only screen and (min-width: 1200px) {
-  /* line 36, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+  /* line 36, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
   .navbar .navbar-centered {
     display: flex;
     justify-content: center;
@@ -271,32 +343,32 @@ a:hover {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 44, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+  /* line 44, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
   .navbar .navbar-centered .navbar-nav {
     height: 100%;
   }
 }
 
-/* line 49, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+/* line 49, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
 .navbar .navbar-centered .navbar-nav li a {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  color: #1E2330;
-  font-size: 15px;
+  color: #1a1e2a;
+  font-size: 16px;
   text-transform: none;
   transition: none;
 }
 
-/* line 55, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+/* line 55, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
 .navbar .navbar-centered .navbar-nav li a:hover {
   background: #363e56;
   color: #FCFCFC;
   opacity: 1;
 }
 
-/* line 60, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+/* line 60, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
 .navbar .navbar-centered .navbar-nav li a[aria-expanded="true"] {
   background: #323a4f;
   color: #FCFCFC;
@@ -304,42 +376,43 @@ a:hover {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 49, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+  /* line 49, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
   .navbar .navbar-centered .navbar-nav li a {
     padding-top: 30px;
     padding-bottom: 30px;
     transition: all .2s;
   }
-  /* line 69, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+  /* line 69, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
   .navbar .navbar-centered .navbar-nav li a:hover, .navbar .navbar-centered .navbar-nav li a:focus {
     background: none;
     color: #00CAF8;
   }
-  /* line 74, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+  /* line 74, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
   .navbar .navbar-centered .navbar-nav li a i {
-    font-size: 12px;
+    font-size: 13px;
+    margin-left: 2px;
   }
-  /* line 77, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+  /* line 78, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
   .navbar .navbar-centered .navbar-nav li a[aria-expanded="true"] {
     background: none;
     color: #00CAF8;
   }
 }
 
-/* line 82, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+/* line 83, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
 .navbar .navbar-centered .navbar-nav li a p {
   margin: 0 5px 0 0;
 }
 
 @media (max-width: 768px) {
-  /* line 87, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+  /* line 88, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
   .navbar .navbar-centered .navbar-nav li.dropdown .dropdown-menu {
     overflow: hidden;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
-  /* line 91, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+  /* line 92, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
   .navbar .navbar-centered .navbar-nav li.dropdown .dropdown-menu.offscreen {
     right: 0;
     left: auto;
@@ -347,36 +420,36 @@ a:hover {
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  /* line 96, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+  /* line 97, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
   .navbar .navbar-centered .navbar-nav li.dropdown .dropdown-menu.offscreen.middle {
     right: -210px;
   }
 }
 
-/* line 102, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+/* line 103, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
 .navbar .navbar-centered .navbar-nav li.dropdown .dropdown-menu .dropdown-header {
   display: none;
 }
 
-/* line 106, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+/* line 107, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
 .navbar .navbar-centered .navbar-nav li.dropdown .dropdown-menu a:hover {
   background: none;
   color: #00CAF8;
 }
 
-/* line 110, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+/* line 111, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
 .navbar .navbar-centered .navbar-nav li.dropdown .dropdown-menu a i {
   display: none;
 }
 
-/* line 119, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+/* line 120, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
 .navbar .navbar-centered .navbar-nav li.dropdown .dropdown-menu.wide .drop-col li a .nav-group-link li {
   padding: 5px 15px 5px 25px;
   line-height: 20px;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 87, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+  /* line 88, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
   .navbar .navbar-centered .navbar-nav li.dropdown .dropdown-menu {
     padding: 0 0 8px 0;
     min-width: 270px;
@@ -385,23 +458,23 @@ a:hover {
     box-shadow: none;
     border: none;
   }
-  /* line 135, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+  /* line 136, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
   .navbar .navbar-centered .navbar-nav li.dropdown .dropdown-menu.wide {
     min-width: 610px;
   }
-  /* line 139, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+  /* line 140, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
   .navbar .navbar-centered .navbar-nav li.dropdown .dropdown-menu.wide .drop-col li a {
     padding: 8px 10px;
     transition: none;
   }
-  /* line 142, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+  /* line 143, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
   .navbar .navbar-centered .navbar-nav li.dropdown .dropdown-menu.wide .drop-col li a .nav-group-link {
     width: 100%;
     padding-bottom: 8px;
     border: 1px solid #fff;
     transition: none;
   }
-  /* line 147, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+  /* line 148, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
   .navbar .navbar-centered .navbar-nav li.dropdown .dropdown-menu.wide .drop-col li a .nav-group-link li {
     padding: 2px 12px 2px 43px;
     font-size: 13px;
@@ -409,7 +482,7 @@ a:hover {
     background: url("../../img/dot.svg") 29px 10px no-repeat;
     background-size: 3px;
   }
-  /* line 153, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+  /* line 154, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
   .navbar .navbar-centered .navbar-nav li.dropdown .dropdown-menu.wide .drop-col li a .nav-group-link li.header {
     transition: all .2s;
     padding: 5px 10px;
@@ -418,16 +491,16 @@ a:hover {
     background: none;
     font-family: "Bitter", serif;
   }
-  /* line 165, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+  /* line 166, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
   .navbar .navbar-centered .navbar-nav li.dropdown .dropdown-menu.wide .drop-col li a:hover .nav-group-link, .navbar .navbar-centered .navbar-nav li.dropdown .dropdown-menu.wide .drop-col li a:focus .nav-group-link {
     border: 1px solid #eee;
     color: #1E2330;
   }
-  /* line 170, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+  /* line 171, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
   .navbar .navbar-centered .navbar-nav li.dropdown .dropdown-menu.wide .drop-col li a:hover li.header, .navbar .navbar-centered .navbar-nav li.dropdown .dropdown-menu.wide .drop-col li a:focus li.header {
     background: #EFEFEF;
   }
-  /* line 179, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+  /* line 180, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
   .navbar .navbar-centered .navbar-nav li.dropdown .dropdown-menu a {
     font-family: "Bitter", serif;
     padding: 8px 25px;
@@ -438,13 +511,13 @@ a:hover {
     align-items: center;
     flex-direction: row;
   }
-  /* line 187, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+  /* line 188, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
   .navbar .navbar-centered .navbar-nav li.dropdown .dropdown-menu a i {
     display: inline-block;
     margin-right: 5px;
     font-size: 9px;
   }
-  /* line 193, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+  /* line 194, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
   .navbar .navbar-centered .navbar-nav li.dropdown .dropdown-menu .dropdown-header {
     background: #1E2330;
     font-size: 14px;
@@ -457,7 +530,7 @@ a:hover {
     align-items: center;
     flex-direction: row;
   }
-  /* line 203, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+  /* line 204, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
   .navbar .navbar-centered .navbar-nav li.dropdown .dropdown-menu .dropdown-header i {
     display: inline-block;
     margin-right: 8px;
@@ -465,13 +538,13 @@ a:hover {
 }
 
 @media only screen and (min-width: 1200px) {
-  /* line 210, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_navbar.scss */
+  /* line 211, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_navbar.scss */
   .navbar .navbar-centered .navbar-nav li.dropdown .dropdown-menu.wide {
     min-width: 605px;
   }
 }
 
-/* line 1, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_hero.scss */
+/* line 1, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_hero.scss */
 .hero {
   background-image: url("../../img/bg.jpg");
   background-position: center bottom;
@@ -481,7 +554,7 @@ a:hover {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 1, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_hero.scss */
+  /* line 1, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_hero.scss */
   .hero {
     min-height: 600px;
     display: flex;
@@ -491,7 +564,7 @@ a:hover {
   }
 }
 
-/* line 13, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_hero.scss */
+/* line 13, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_hero.scss */
 .hero .hero-text-wrap {
   text-align: center;
   height: auto;
@@ -502,7 +575,7 @@ a:hover {
 }
 
 @media only screen and (min-width: 480px) {
-  /* line 13, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_hero.scss */
+  /* line 13, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_hero.scss */
   .hero .hero-text-wrap {
     padding: 40px 30px 30px;
     text-align: left;
@@ -514,19 +587,19 @@ a:hover {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 13, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_hero.scss */
+  /* line 13, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_hero.scss */
   .hero .hero-text-wrap {
     margin: 0;
   }
 }
 
-/* line 30, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_hero.scss */
+/* line 30, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_hero.scss */
 .hero .hero-text-wrap h2 {
   display: block;
   margin: 0 0 5px;
 }
 
-/* line 34, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_hero.scss */
+/* line 34, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_hero.scss */
 .hero .hero-text-wrap span {
   display: block;
   width: 70px;
@@ -536,13 +609,13 @@ a:hover {
 }
 
 @media only screen and (min-width: 480px) {
-  /* line 34, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_hero.scss */
+  /* line 34, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_hero.scss */
   .hero .hero-text-wrap span {
     margin: 20px 0 15px;
   }
 }
 
-/* line 44, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_hero.scss */
+/* line 44, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_hero.scss */
 .hero .hero-text-wrap p {
   display: block;
   margin: 0 0 20px;
@@ -550,33 +623,33 @@ a:hover {
 }
 
 @media only screen and (min-width: 480px) {
-  /* line 44, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_hero.scss */
+  /* line 44, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_hero.scss */
   .hero .hero-text-wrap p {
     font-size: 16px;
   }
 }
 
 @media only screen and (min-width: 480px) {
-  /* line 52, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_hero.scss */
+  /* line 52, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_hero.scss */
   .hero .hero-text-wrap .btn-uppercased {
     align-self: flex-end;
   }
 }
 
-/* line 58, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_hero.scss */
+/* line 58, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_hero.scss */
 .hero.full-height {
   min-height: auto;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 60, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_hero.scss */
+  /* line 60, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_hero.scss */
   .hero.full-height .hero-text-wrap {
     min-height: 400px;
     padding: 60px 30px;
   }
 }
 
-/* line 67, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_hero.scss */
+/* line 67, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_hero.scss */
 .hero.full-width {
   background: linear-gradient(rgba(30, 35, 48, 0.82), rgba(30, 35, 48, 0.82)), url("../../img/bg.jpg");
   background-position: center bottom;
@@ -585,20 +658,20 @@ a:hover {
   width: 100%;
 }
 
-/* line 73, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_hero.scss */
+/* line 73, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_hero.scss */
 .hero.full-width .hero-text-wrap {
   background: none;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 73, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_hero.scss */
+  /* line 73, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_hero.scss */
   .hero.full-width .hero-text-wrap {
     min-height: auto;
     padding: 35px 0;
   }
 }
 
-/* line 79, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_hero.scss */
+/* line 79, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_hero.scss */
 .hero.full-width .hero-text-wrap h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -610,25 +683,25 @@ a:hover {
   flex-direction: row;
 }
 
-/* line 87, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_hero.scss */
+/* line 87, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_hero.scss */
 .hero.full-width .hero-text-wrap h2 p {
   display: block;
   padding: 0 5px 0 2px;
   margin: 0;
 }
 
-/* line 92, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_hero.scss */
+/* line 92, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_hero.scss */
 .hero.full-width .hero-text-wrap h2 strong {
   font-weight: 400;
 }
 
-/* line 100, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_hero.scss */
+/* line 100, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_hero.scss */
 .hero-img-caption {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 100, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_hero.scss */
+  /* line 100, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_hero.scss */
   .hero-img-caption {
     display: block;
     width: 100%;
@@ -640,14 +713,14 @@ a:hover {
     align-items: center;
     flex-direction: row;
   }
-  /* line 111, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_hero.scss */
+  /* line 111, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_hero.scss */
   .hero-img-caption .hero-img-wrap {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex-direction: row;
   }
-  /* line 115, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_hero.scss */
+  /* line 115, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_hero.scss */
   .hero-img-caption .hero-img-wrap p {
     font-size: 12px;
     color: #C3C4C6;
@@ -657,12 +730,12 @@ a:hover {
   }
 }
 
-/* line 1, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_buttons.scss */
+/* line 1, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_buttons.scss */
 .btn {
   border-radius: 0;
 }
 
-/* line 5, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_buttons.scss */
+/* line 5, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_buttons.scss */
 .btn-uppercased {
   background: none;
   color: #fff;
@@ -672,24 +745,24 @@ a:hover {
   font-size: 11px;
 }
 
-/* line 12, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_buttons.scss */
+/* line 12, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_buttons.scss */
 .btn-uppercased:hover {
   background: none;
   color: #00CAF8;
 }
 
-/* line 16, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_buttons.scss */
+/* line 16, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_buttons.scss */
 .btn-uppercased:focus {
   background: none;
   color: #00CAF8;
 }
 
-/* line 20, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_buttons.scss */
+/* line 20, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_buttons.scss */
 .btn-uppercased.underline {
   border-bottom: 1px solid #7C625E;
 }
 
-/* line 25, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_buttons.scss */
+/* line 25, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_buttons.scss */
 .btn-filled {
   background: #00CAF8;
   color: #fff;
@@ -700,25 +773,25 @@ a:hover {
 }
 
 @media only screen and (min-width: 480px) {
-  /* line 25, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_buttons.scss */
+  /* line 25, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_buttons.scss */
   .btn-filled {
     width: auto;
   }
 }
 
-/* line 35, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_buttons.scss */
+/* line 35, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_buttons.scss */
 .btn-filled:hover {
   background: #2cd8ff;
   color: #fff;
 }
 
-/* line 39, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_buttons.scss */
+/* line 39, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_buttons.scss */
 .btn-filled:focus {
   background: #2cd8ff;
   color: #fff;
 }
 
-/* line 43, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_buttons.scss */
+/* line 43, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_buttons.scss */
 .btn-filled.color-brown {
   background: #7C625E;
   padding: 10px 20px;
@@ -728,29 +801,29 @@ a:hover {
   flex-direction: row;
 }
 
-/* line 47, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_buttons.scss */
+/* line 47, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_buttons.scss */
 .btn-filled.color-brown:hover {
   background: #977a76;
   color: #fff;
 }
 
-/* line 51, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_buttons.scss */
+/* line 51, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_buttons.scss */
 .btn-filled.color-brown:focus {
   background: #977a76;
   color: #fff;
 }
 
-/* line 55, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_buttons.scss */
+/* line 55, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_buttons.scss */
 .btn-filled.color-brown i {
   font-size: 9px;
 }
 
-/* line 59, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_buttons.scss */
+/* line 59, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_buttons.scss */
 .btn-filled.reservation {
   padding: 8px 20px;
 }
 
-/* line 64, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_buttons.scss */
+/* line 64, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_buttons.scss */
 .btn-newsletter {
   background: #7C625E;
   color: #fff;
@@ -761,7 +834,7 @@ a:hover {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 64, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_buttons.scss */
+  /* line 64, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_buttons.scss */
   .btn-newsletter {
     width: auto;
     margin: -31px 0 40px;
@@ -769,39 +842,39 @@ a:hover {
   }
 }
 
-/* line 76, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_buttons.scss */
+/* line 76, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_buttons.scss */
 .btn-newsletter:hover {
   background: #977a76;
   color: #fff;
   opacity: 1;
 }
 
-/* line 81, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_buttons.scss */
+/* line 81, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_buttons.scss */
 .btn-newsletter:focus {
   background: #977a76;
   color: #fff;
   opacity: 1;
 }
 
-/* line 1, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 1, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section {
   padding: 0 15px;
 }
 
-/* line 3, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 3, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section .thumbnails-wrap {
   padding: 20px 0 25px;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 3, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+  /* line 3, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
   section .thumbnails-wrap {
-    padding: 20px 0 50px;
+    padding: 20px 0 35px;
     min-height: 200px;
   }
 }
 
-/* line 9, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 9, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section .thumbnails-wrap .thumbnail {
   padding: 0 0 15px 0;
   border: none;
@@ -809,7 +882,7 @@ section .thumbnails-wrap .thumbnail {
   background: #FCFCFC;
 }
 
-/* line 14, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 14, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section .thumbnails-wrap .thumbnail .image-holder {
   width: 100%;
   min-height: 300px;
@@ -819,45 +892,45 @@ section .thumbnails-wrap .thumbnail .image-holder {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 14, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+  /* line 14, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
   section .thumbnails-wrap .thumbnail .image-holder {
     min-height: 200px;
   }
 }
 
-/* line 24, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 24, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section .thumbnails-wrap .thumbnail .caption {
   padding: 10px 20px;
 }
 
-/* line 27, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 27, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section .thumbnails-wrap .thumbnail .caption p .btn-uppercased {
   color: #1E2330;
 }
 
-/* line 29, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 29, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section .thumbnails-wrap .thumbnail .caption p .btn-uppercased:hover {
   background: none;
   color: #00CAF8;
 }
 
-/* line 33, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 33, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section .thumbnails-wrap .thumbnail .caption p .btn-uppercased:focus {
   background: none;
   color: #00CAF8;
 }
 
-/* line 42, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 42, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.recommandations {
   background: #fff;
 }
 
-/* line 45, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 45, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.blog {
   background: #EFEFEF;
 }
 
-/* line 47, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 47, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.blog .btn-blog-wrap {
   margin: 20px 0 0;
   display: flex;
@@ -866,25 +939,25 @@ section.blog .btn-blog-wrap {
   flex-direction: row;
 }
 
-/* line 54, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 54, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.pourquoi {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 54, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+  /* line 54, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
   section.pourquoi {
     display: block;
   }
 }
 
-/* line 60, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 60, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.pourquoi .thumbnails-wrap .thumbnail {
   background: none;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 62, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+  /* line 62, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
   section.pourquoi .thumbnails-wrap .thumbnail .image-holder {
     width: 100%;
     min-height: 70px;
@@ -893,32 +966,32 @@ section.pourquoi .thumbnails-wrap .thumbnail {
   }
 }
 
-/* line 69, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 69, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.pourquoi .thumbnails-wrap .thumbnail .image-holder.icon-q {
   background: url("../../img/01.png") 50% 50% no-repeat;
 }
 
-/* line 72, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 72, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.pourquoi .thumbnails-wrap .thumbnail .image-holder.icon-w {
   background: url("../../img/02.png") 50% 50% no-repeat;
 }
 
-/* line 75, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 75, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.pourquoi .thumbnails-wrap .thumbnail .image-holder.icon-e {
   background: url("../../img/03.png") 50% 50% no-repeat;
 }
 
-/* line 78, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 78, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.pourquoi .thumbnails-wrap .thumbnail .image-holder.icon-r {
   background: url("../../img/04.png") 50% 50% no-repeat;
 }
 
-/* line 82, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 82, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.pourquoi .thumbnails-wrap .thumbnail .caption {
   text-align: center;
 }
 
-/* line 89, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 89, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.breadcrumbs .breadcrumbs-wrap {
   display: flex;
   justify-content: flex-start;
@@ -927,7 +1000,7 @@ section.breadcrumbs .breadcrumbs-wrap {
   padding: 7px 0;
 }
 
-/* line 94, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 94, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.breadcrumbs .breadcrumbs-wrap .breadcrumbs-home {
   display: block;
   margin: 0;
@@ -938,13 +1011,13 @@ section.breadcrumbs .breadcrumbs-wrap .breadcrumbs-home {
   flex-flow: "Open Sans", sans-serif;
 }
 
-/* line 104, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 104, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.breadcrumbs .breadcrumbs-wrap span i {
   font-size: 10px;
   padding: 0 5px 0 0;
 }
 
-/* line 109, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 109, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.breadcrumbs .breadcrumbs-wrap p {
   display: block;
   margin: 0;
@@ -952,13 +1025,13 @@ section.breadcrumbs .breadcrumbs-wrap p {
   font-size: 12px;
 }
 
-/* line 119, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 119, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.trip-list .thumbnails-wrap .thumbnail {
   padding: 0;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 119, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+  /* line 119, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
   section.trip-list .thumbnails-wrap .thumbnail {
     display: flex;
     justify-content: flex-start;
@@ -967,14 +1040,14 @@ section.trip-list .thumbnails-wrap .thumbnail {
   }
 }
 
-/* line 126, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 126, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.trip-list .thumbnails-wrap .thumbnail .image-holder {
   flex: 2;
   min-height: 190px;
 }
 
 @media only screen and (min-width: 480px) {
-  /* line 126, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+  /* line 126, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
   section.trip-list .thumbnails-wrap .thumbnail .image-holder {
     flex: 2;
     min-height: 210px;
@@ -982,19 +1055,19 @@ section.trip-list .thumbnails-wrap .thumbnail .image-holder {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 126, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+  /* line 126, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
   section.trip-list .thumbnails-wrap .thumbnail .image-holder {
     flex: 1;
     height: 250px;
   }
 }
 
-/* line 138, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 138, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.trip-list .thumbnails-wrap .thumbnail .caption {
   flex: 2;
 }
 
-/* line 140, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 140, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.trip-list .thumbnails-wrap .thumbnail .caption .title-wrap {
   display: flex;
   justify-content: center;
@@ -1003,7 +1076,7 @@ section.trip-list .thumbnails-wrap .thumbnail .caption .title-wrap {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 140, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+  /* line 140, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
   section.trip-list .thumbnails-wrap .thumbnail .caption .title-wrap {
     display: flex;
     justify-content: space-between;
@@ -1012,7 +1085,7 @@ section.trip-list .thumbnails-wrap .thumbnail .caption .title-wrap {
   }
 }
 
-/* line 149, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 149, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.trip-list .thumbnails-wrap .thumbnail .caption .title-wrap h4 {
   display: flex;
   justify-content: center;
@@ -1024,7 +1097,7 @@ section.trip-list .thumbnails-wrap .thumbnail .caption .title-wrap h4 {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 149, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+  /* line 149, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
   section.trip-list .thumbnails-wrap .thumbnail .caption .title-wrap h4 {
     display: flex;
     justify-content: center;
@@ -1036,20 +1109,20 @@ section.trip-list .thumbnails-wrap .thumbnail .caption .title-wrap h4 {
 }
 
 @media only screen and (min-width: 992px) {
-  /* line 149, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+  /* line 149, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
   section.trip-list .thumbnails-wrap .thumbnail .caption .title-wrap h4 {
     flex: 3;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  /* line 149, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+  /* line 149, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
   section.trip-list .thumbnails-wrap .thumbnail .caption .title-wrap h4 {
     flex: 4;
   }
 }
 
-/* line 169, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 169, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.trip-list .thumbnails-wrap .thumbnail .caption .title-wrap h4 .subtitle {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -1057,7 +1130,7 @@ section.trip-list .thumbnails-wrap .thumbnail .caption .title-wrap h4 .subtitle 
   padding-top: 5px;
 }
 
-/* line 176, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 176, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.trip-list .thumbnails-wrap .thumbnail .caption .title-wrap .price-wrap {
   display: flex;
   justify-content: center;
@@ -1067,7 +1140,7 @@ section.trip-list .thumbnails-wrap .thumbnail .caption .title-wrap .price-wrap {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 176, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+  /* line 176, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
   section.trip-list .thumbnails-wrap .thumbnail .caption .title-wrap .price-wrap {
     flex: 1;
     display: flex;
@@ -1079,7 +1152,7 @@ section.trip-list .thumbnails-wrap .thumbnail .caption .title-wrap .price-wrap {
   }
 }
 
-/* line 189, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 189, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.trip-list .thumbnails-wrap .thumbnail .caption .title-wrap .price-wrap .price {
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
@@ -1091,7 +1164,7 @@ section.trip-list .thumbnails-wrap .thumbnail .caption .title-wrap .price-wrap .
   float: left;
 }
 
-/* line 199, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 199, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.trip-list .thumbnails-wrap .thumbnail .caption .title-wrap .price-wrap .currency {
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
@@ -1102,7 +1175,7 @@ section.trip-list .thumbnails-wrap .thumbnail .caption .title-wrap .price-wrap .
   float: right;
 }
 
-/* line 208, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 208, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.trip-list .thumbnails-wrap .thumbnail .caption .title-wrap .price-wrap .price-info {
   color: #7C625E;
   display: block;
@@ -1111,7 +1184,7 @@ section.trip-list .thumbnails-wrap .thumbnail .caption .title-wrap .price-wrap .
   padding: 0;
 }
 
-/* line 217, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 217, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.trip-list .thumbnails-wrap .thumbnail .caption .trip-details {
   display: flex;
   justify-content: center;
@@ -1120,20 +1193,20 @@ section.trip-list .thumbnails-wrap .thumbnail .caption .trip-details {
   padding: 0 0 5px 0;
 }
 
-/* line 221, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 221, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.trip-list .thumbnails-wrap .thumbnail .caption .trip-details span {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 221, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+  /* line 221, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
   section.trip-list .thumbnails-wrap .thumbnail .caption .trip-details span {
     display: block;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 217, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+  /* line 217, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
   section.trip-list .thumbnails-wrap .thumbnail .caption .trip-details {
     display: flex;
     justify-content: flex-start;
@@ -1142,7 +1215,7 @@ section.trip-list .thumbnails-wrap .thumbnail .caption .trip-details span {
   }
 }
 
-/* line 233, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 233, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.trip-list .thumbnails-wrap .thumbnail .caption .trip-details h5 {
   display: block;
   margin: 0;
@@ -1151,14 +1224,14 @@ section.trip-list .thumbnails-wrap .thumbnail .caption .trip-details h5 {
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 247, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 247, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.single-trip .thumbnails-wrap .thumbnail {
   padding: 0;
   background: none;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 247, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+  /* line 247, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
   section.single-trip .thumbnails-wrap .thumbnail {
     display: flex;
     justify-content: flex-start;
@@ -1167,14 +1240,14 @@ section.single-trip .thumbnails-wrap .thumbnail {
   }
 }
 
-/* line 255, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 255, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.single-trip .thumbnails-wrap .thumbnail .image-holder {
   flex: 2;
   min-height: 190px;
 }
 
 @media only screen and (min-width: 480px) {
-  /* line 255, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+  /* line 255, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
   section.single-trip .thumbnails-wrap .thumbnail .image-holder {
     flex: 2;
     min-height: 210px;
@@ -1182,19 +1255,19 @@ section.single-trip .thumbnails-wrap .thumbnail .image-holder {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 255, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+  /* line 255, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
   section.single-trip .thumbnails-wrap .thumbnail .image-holder {
     flex: 1;
     height: 250px;
   }
 }
 
-/* line 267, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 267, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.single-trip .thumbnails-wrap .thumbnail .caption {
   flex: 2;
 }
 
-/* line 269, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 269, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.single-trip .thumbnails-wrap .thumbnail .caption .title-wrap {
   display: flex;
   justify-content: center;
@@ -1203,7 +1276,7 @@ section.single-trip .thumbnails-wrap .thumbnail .caption .title-wrap {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 269, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+  /* line 269, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
   section.single-trip .thumbnails-wrap .thumbnail .caption .title-wrap {
     display: flex;
     justify-content: space-between;
@@ -1212,7 +1285,7 @@ section.single-trip .thumbnails-wrap .thumbnail .caption .title-wrap {
   }
 }
 
-/* line 278, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 278, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.single-trip .thumbnails-wrap .thumbnail .caption .title-wrap h4 {
   display: flex;
   justify-content: center;
@@ -1224,7 +1297,7 @@ section.single-trip .thumbnails-wrap .thumbnail .caption .title-wrap h4 {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 278, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+  /* line 278, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
   section.single-trip .thumbnails-wrap .thumbnail .caption .title-wrap h4 {
     display: flex;
     justify-content: center;
@@ -1237,20 +1310,20 @@ section.single-trip .thumbnails-wrap .thumbnail .caption .title-wrap h4 {
 }
 
 @media only screen and (min-width: 992px) {
-  /* line 278, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+  /* line 278, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
   section.single-trip .thumbnails-wrap .thumbnail .caption .title-wrap h4 {
     flex: 3;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  /* line 278, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+  /* line 278, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
   section.single-trip .thumbnails-wrap .thumbnail .caption .title-wrap h4 {
     flex: 4;
   }
 }
 
-/* line 299, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 299, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.single-trip .thumbnails-wrap .thumbnail .caption .title-wrap h4 .subtitle {
   font-family: "Bitter", serif;
   font-size: 16px;
@@ -1258,7 +1331,7 @@ section.single-trip .thumbnails-wrap .thumbnail .caption .title-wrap h4 .subtitl
   padding-top: 5px;
 }
 
-/* line 306, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 306, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.single-trip .thumbnails-wrap .thumbnail .caption .title-wrap .price-wrap {
   display: flex;
   justify-content: center;
@@ -1268,7 +1341,7 @@ section.single-trip .thumbnails-wrap .thumbnail .caption .title-wrap .price-wrap
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 306, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+  /* line 306, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
   section.single-trip .thumbnails-wrap .thumbnail .caption .title-wrap .price-wrap {
     display: flex;
     justify-content: center;
@@ -1279,7 +1352,7 @@ section.single-trip .thumbnails-wrap .thumbnail .caption .title-wrap .price-wrap
   }
 }
 
-/* line 319, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 319, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.single-trip .thumbnails-wrap .thumbnail .caption .title-wrap .price-wrap .price {
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
@@ -1291,7 +1364,7 @@ section.single-trip .thumbnails-wrap .thumbnail .caption .title-wrap .price-wrap
   float: left;
 }
 
-/* line 329, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sections.scss */
+/* line 329, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sections.scss */
 section.single-trip .thumbnails-wrap .thumbnail .caption .title-wrap .price-wrap .currency {
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
@@ -1302,19 +1375,19 @@ section.single-trip .thumbnails-wrap .thumbnail .caption .title-wrap .price-wrap
   float: right;
 }
 
-/* line 4, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_tabs.scss */
+/* line 4, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_tabs.scss */
 .nav.lc-tabs li a {
   border-radius: 0;
   color: #1E2330;
   font-size: 16px;
 }
 
-/* line 13, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_tabs.scss */
+/* line 13, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_tabs.scss */
 .tab-content {
   padding: 15px 0;
 }
 
-/* line 15, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_tabs.scss */
+/* line 15, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_tabs.scss */
 .tab-content p {
   font-size: 16px;
   line-height: 30px;
@@ -1323,31 +1396,31 @@ section.single-trip .thumbnails-wrap .thumbnail .caption .title-wrap .price-wrap
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 1, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sidebar.scss */
+  /* line 1, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sidebar.scss */
   .sidebar {
     padding: 20px 0;
   }
 }
 
-/* line 5, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sidebar.scss */
+/* line 5, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sidebar.scss */
 .sidebar .print {
   padding: 5px 30px;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 5, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sidebar.scss */
+  /* line 5, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sidebar.scss */
   .sidebar .print {
     padding: 0;
   }
 }
 
-/* line 10, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sidebar.scss */
+/* line 10, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sidebar.scss */
 .sidebar .print a {
   color: #7C625E;
   font-size: 14px;
 }
 
-/* line 13, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sidebar.scss */
+/* line 13, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sidebar.scss */
 .sidebar .print a .printer {
   background: url("../../img/printer.svg") 50% 50% no-repeat;
   padding: 10px 8px;
@@ -1356,14 +1429,14 @@ section.single-trip .thumbnails-wrap .thumbnail .caption .title-wrap .price-wrap
   float: left;
 }
 
-/* line 20, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sidebar.scss */
+/* line 20, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sidebar.scss */
 .sidebar .print a p {
   display: block;
   float: left;
   padding-left: 10px;
 }
 
-/* line 27, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sidebar.scss */
+/* line 27, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sidebar.scss */
 .sidebar .sidebar-box {
   margin-bottom: 15px;
   background: #EFEFEF;
@@ -1374,18 +1447,18 @@ section.single-trip .thumbnails-wrap .thumbnail .caption .title-wrap .price-wrap
   flex-direction: column;
 }
 
-/* line 34, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sidebar.scss */
+/* line 34, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sidebar.scss */
 .sidebar .sidebar-box .sidebar-title {
   font-size: 18px;
   margin: 2px 0 8px;
 }
 
-/* line 37, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sidebar.scss */
+/* line 37, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sidebar.scss */
 .sidebar .sidebar-box .sidebar-title img {
   height: 25px;
 }
 
-/* line 42, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sidebar.scss */
+/* line 42, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sidebar.scss */
 .sidebar .sidebar-box.sidebar-trip-details h5 {
   display: block;
   margin: 0;
@@ -1394,12 +1467,12 @@ section.single-trip .thumbnails-wrap .thumbnail .caption .title-wrap .price-wrap
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 48, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sidebar.scss */
+/* line 48, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sidebar.scss */
 .sidebar .sidebar-box.sidebar-trip-details h5 i {
   margin-right: 7px;
 }
 
-/* line 54, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sidebar.scss */
+/* line 54, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sidebar.scss */
 .sidebar .sidebar-box.sidebar-contact .sidebar-contact-wrap {
   display: flex;
   justify-content: center;
@@ -1408,43 +1481,43 @@ section.single-trip .thumbnails-wrap .thumbnail .caption .title-wrap .price-wrap
   width: 100%;
 }
 
-/* line 59, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sidebar.scss */
+/* line 59, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sidebar.scss */
 .sidebar .sidebar-box.sidebar-contact .sidebar-contact-wrap h4 {
   font-size: 18px;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 59, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sidebar.scss */
+  /* line 59, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sidebar.scss */
   .sidebar .sidebar-box.sidebar-contact .sidebar-contact-wrap h4 {
     margin-top: 10px;
   }
 }
 
-/* line 65, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sidebar.scss */
+/* line 65, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sidebar.scss */
 .sidebar .sidebar-box.sidebar-contact .sidebar-contact-wrap h5 {
   font-family: "Open Sans", sans-serif;
   line-height: 5px;
 }
 
-/* line 69, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sidebar.scss */
+/* line 69, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sidebar.scss */
 .sidebar .sidebar-box.sidebar-contact .sidebar-contact-wrap img {
   height: 160px;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 72, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_sidebar.scss */
+  /* line 72, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_sidebar.scss */
   .sidebar .sidebar-box.sidebar-contact .sidebar-contact-wrap .sidebar-contact-button-wrap {
     margin-top: 10px;
   }
 }
 
-/* line 2, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_footer.scss */
+/* line 2, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_footer.scss */
 footer .pre-footer-wrap {
   background: #1E2330;
   padding: 0 0 20px 0;
 }
 
-/* line 5, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_footer.scss */
+/* line 5, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_footer.scss */
 footer .pre-footer-wrap .btn-newsletter-wrap {
   display: flex;
   justify-content: center;
@@ -1452,7 +1525,7 @@ footer .pre-footer-wrap .btn-newsletter-wrap {
   flex-direction: row;
 }
 
-/* line 10, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_footer.scss */
+/* line 10, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_footer.scss */
 footer .pre-footer-wrap ul li a {
   color: #d9d9d9;
   font-size: 12px;
@@ -1464,11 +1537,11 @@ footer .pre-footer-wrap ul li a {
 }
 
 @media screen and (max-width: 992px) {
-  /* line 19, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_footer.scss */
+  /* line 19, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_footer.scss */
   footer .pre-footer-wrap ul li.mobile-footer-link {
     text-align: center;
   }
-  /* line 22, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_footer.scss */
+  /* line 22, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_footer.scss */
   footer .pre-footer-wrap ul li.mobile-footer-link a {
     background: none;
     font-size: 16px;
@@ -1477,7 +1550,7 @@ footer .pre-footer-wrap ul li a {
   }
 }
 
-/* line 31, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_footer.scss */
+/* line 31, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_footer.scss */
 footer .pre-footer-wrap ul li.header p {
   color: #fff;
   font-size: 13px;
@@ -1485,7 +1558,7 @@ footer .pre-footer-wrap ul li.header p {
   margin-bottom: 20px;
 }
 
-/* line 41, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_footer.scss */
+/* line 41, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_footer.scss */
 footer .pre-footer-wrap ul.contact li a {
   background: none;
   font-size: 13px;
@@ -1502,12 +1575,12 @@ footer .pre-footer-wrap ul.contact li a {
   flex-direction: row;
 }
 
-/* line 54, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_footer.scss */
+/* line 54, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_footer.scss */
 footer .pre-footer-wrap ul.contact li a i {
   font-size: 11px;
 }
 
-/* line 58, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_footer.scss */
+/* line 58, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_footer.scss */
 footer .pre-footer-wrap ul.contact li.social {
   display: flex;
   justify-content: flex-start;
@@ -1515,19 +1588,19 @@ footer .pre-footer-wrap ul.contact li.social {
   flex-direction: row;
 }
 
-/* line 62, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_footer.scss */
+/* line 62, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_footer.scss */
 footer .pre-footer-wrap ul.contact li.social a {
   border: none;
   padding: 0;
   margin: 15px 15px 0 0;
 }
 
-/* line 66, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_footer.scss */
+/* line 66, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_footer.scss */
 footer .pre-footer-wrap ul.contact li.social a i {
   font-size: 28px;
 }
 
-/* line 75, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_footer.scss */
+/* line 75, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_footer.scss */
 footer .footer-wrap {
   background: #141820;
   display: flex;
@@ -1536,7 +1609,7 @@ footer .footer-wrap {
   flex-direction: row;
 }
 
-/* line 80, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_footer.scss */
+/* line 80, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_footer.scss */
 footer .footer-wrap p {
   font-family: "Bitter", serif;
   color: #bcbcbc;
@@ -1547,58 +1620,58 @@ footer .footer-wrap p {
 }
 
 @media screen and (min-width: 992px) {
-  /* line 1, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_utilities.scss */
+  /* line 1, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_utilities.scss */
   .m0-i-sm {
     margin: 0 !important;
   }
 }
 
 @media screen and (min-width: 992px) {
-  /* line 7, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_utilities.scss */
+  /* line 7, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_utilities.scss */
   .p0-i-sm {
     padding: 0 !important;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  /* line 13, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_utilities.scss */
+  /* line 13, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_utilities.scss */
   .pr0-i-md {
     padding-right: 0 !important;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  /* line 19, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_utilities.scss */
+  /* line 19, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_utilities.scss */
   .pl0-i-md {
     padding-left: 0 !important;
   }
 }
 
 @media screen and (min-width: 768px) {
-  /* line 25, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_utilities.scss */
+  /* line 25, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_utilities.scss */
   .pr0-i-xs {
     padding-right: 0 !important;
   }
 }
 
 @media screen and (min-width: 768px) {
-  /* line 31, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_utilities.scss */
+  /* line 31, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_utilities.scss */
   .pl0-i-xs {
     padding-left: 0 !important;
   }
 }
 
-/* line 37, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_utilities.scss */
+/* line 37, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_utilities.scss */
 .w100 {
   width: 100%;
 }
 
-/* line 41, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_utilities.scss */
+/* line 41, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_utilities.scss */
 .w120 {
   width: 120px;
 }
 
-/* line 45, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_utilities.scss */
+/* line 45, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_utilities.scss */
 .dash {
   display: block;
   width: 70px;
@@ -1608,7 +1681,7 @@ footer .footer-wrap p {
 }
 
 @media only screen and (min-width: 480px) {
-  /* line 45, /Users/bnowak/Desktop/Lautre Chili/front v1/style/scss/partials/_utilities.scss */
+  /* line 45, /Users/bnowak/Sites/Lautre Chili/2018/html/style/scss/partials/_utilities.scss */
   .dash {
     margin: 15px 0 15px;
   }
