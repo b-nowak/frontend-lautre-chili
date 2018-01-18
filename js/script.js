@@ -1,12 +1,12 @@
-/* $(document).ready(function () {
+ $(document).ready(function () {
 
-    // Add slideDown animation to Bootstrap dropdown when expanding.
-    $('.dropdown').on('show.bs.dropdown', function () {
-        $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
-    });
+     function toggleIcon(e) {
+         $(e.target)
+             .prev('.panel-heading')
+             .find(".more-less")
+             .toggleClass('glyphicon-plus glyphicon-minus');
+     }
+     $('.panel-group').on('hidden.bs.collapse', toggleIcon);
+     $('.panel-group').on('shown.bs.collapse', toggleIcon);
 
-    // Add slideUp animation to Bootstrap dropdown when collapsing.
-    $('.dropdown').on('hide.bs.dropdown', function () {
-        $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
-    });
-}); */
+ });

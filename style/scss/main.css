@@ -168,21 +168,6 @@ body {
       margin: 0 5px;
       font-size: 9px; }
 
-.table > thead > tr > th {
-  vertical-align: bottom;
-  border-bottom: 1px solid #a5a5a5; }
-
-.table > tbody > tr > td,
-.table > tbody > tr > th,
-.table > tfoot > tr > td,
-.table > tfoot > tr > th,
-.table > thead > tr > td,
-.table > thead > tr > th {
-  padding: 8px;
-  line-height: 1.42857143;
-  vertical-align: top;
-  border-top: 1px solid #eee; }
-
 a {
   transition: all .4s; }
   a:hover {
@@ -514,9 +499,6 @@ a {
       font-size: 9px; }
   .btn-filled.reservation {
     padding: 8px 20px; }
-    .btn-filled.reservation.small {
-      padding: 5px 10px;
-      font-size: 13px; }
 
 .btn-newsletter {
   background: #7C625E;
@@ -838,8 +820,6 @@ section {
             padding: 0 0 3px 5px;
             font-size: 26px;
             float: right; }
-  section.single-trip .table-wrap {
-    margin-top: 35px; }
 
 .nav.lc-tabs li a {
   border-radius: 0;
@@ -854,44 +834,38 @@ section {
     text-align: justify;
     margin: 0 0 15px; }
 
-.accordion .panel-group .panel {
-  border-radius: 0;
-  box-shadow: none;
-  border-color: #EEEEEE;
-  padding: 5px 10px;
-  background: #fafafa none repeat scroll 0% 0%; }
-.accordion .panel-body {
-  background: #fafafa none repeat scroll 0% 0%; }
-.accordion .panel-default > .panel-heading {
-  padding: 0;
-  border-radius: 0;
-  color: #212121;
-  background-color: #FAFAFA;
-  border-color: #EEEEEE; }
-.accordion .panel-title {
-  font-size: 16px; }
-.accordion .panel-title > a {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-  padding: 15px;
-  text-decoration: none; }
-.accordion .more-less {
-  float: left;
-  color: #fff;
-  background: #7C625E;
-  padding: 0 0 0 1px;
-  border-radius: 50%;
-  height: 20px;
-  width: 20px;
-  margin-right: 10px;
-  line-height: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-.accordion .panel-default > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #EEEEEE; }
+.accordion {
+    /*******************************
+* Does not work properly if "in" is added after "collapse".
+* Get free snippets on bootpen.com
+*******************************/
+  /* ----- v CAN BE DELETED v ----- */ }
+  .accordion .panel-group .panel {
+    border-radius: 0;
+    box-shadow: none;
+    border-color: #EEEEEE; }
+  .accordion .panel-default > .panel-heading {
+    padding: 0;
+    border-radius: 0;
+    color: #212121;
+    background-color: #FAFAFA;
+    border-color: #EEEEEE; }
+  .accordion .panel-title {
+    font-size: 14px; }
+  .accordion .panel-title > a {
+    display: block;
+    padding: 15px;
+    text-decoration: none; }
+  .accordion .more-less {
+    float: right;
+    color: #212121; }
+  .accordion .panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #EEEEEE; }
+  .accordion body {
+    background-color: #26a69a; }
+  .accordion .demo {
+    padding-top: 60px;
+    padding-bottom: 60px; }
 
 @media only screen and (min-width: 768px) {
   .sidebar {
@@ -954,63 +928,6 @@ section {
     @media only screen and (min-width: 768px) {
       .sidebar .sidebar-box.sidebar-contact .sidebar-contact-wrap .sidebar-contact-button-wrap {
         margin-top: 10px; } }
-
-form_main {
-  width: 100%; }
-
-.form_main h4 {
-  font-family: roboto;
-  font-size: 20px;
-  font-weight: 300;
-  margin-bottom: 15px;
-  margin-top: 20px;
-  text-transform: uppercase; }
-
-.heading {
-  border-bottom: 1px solid #fcab0e;
-  padding-bottom: 9px;
-  position: relative; }
-
-.heading span {
-  background: #9e6600 none repeat scroll 0 0;
-  bottom: -2px;
-  height: 3px;
-  left: 0;
-  position: absolute;
-  width: 75px; }
-
-.form {
-  border-radius: 7px;
-  padding: 6px; }
-
-.txt[type="text"] {
-  border: 1px solid #ccc;
-  margin: 10px 0;
-  padding: 10px 0 10px 5px;
-  width: 100%; }
-
-.txt_3[type="text"] {
-  margin: 10px 0 0;
-  padding: 10px 0 10px 5px;
-  width: 100%; }
-
-.txt2[type="submit"] {
-  background: #242424 none repeat scroll 0 0;
-  border: 1px solid #4f5c04;
-  border-radius: 25px;
-  color: #fff;
-  font-size: 16px;
-  font-style: normal;
-  line-height: 35px;
-  margin: 10px 0;
-  padding: 0;
-  text-transform: uppercase;
-  width: 30%; }
-
-.txt2:hover {
-  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  color: #5793ef;
-  transition: all 0.5s ease 0s; }
 
 footer .pre-footer-wrap {
   background: #1E2330;
