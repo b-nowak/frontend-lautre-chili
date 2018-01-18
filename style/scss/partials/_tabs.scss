@@ -1,21 +1,75 @@
 .nav {
-    &.lc-tabs {
-        li {
-            a {
-                border-radius: 0;
-                color: $base-dark;
-                font-size: 16px;
-            }
-        }
+  &.lc-tabs {
+    li {
+      a {
+        border-radius: 0;
+        color: $base-dark;
+        font-size: 16px;
+      }
     }
+  }
 }
 
 .tab-content {
-    padding: 15px 0;
-    p {
-        font-size: 16px;
-        line-height: 30px;
-        text-align: justify;
-        margin: 0 0 15px;
+  padding: 15px 0;
+  p {
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
+    margin: 0 0 15px;
+  }
+  #tab-q {}
+  #tab-w {}
+  #tab-e {
+    .bg-list-wrap {
+      float: right;
+      background: #eee;
+      .bg-list-items {
+        width: 50%;
+        float: left;
+        padding: 30px 40px;
+        ul {
+          margin-bottom: 30px;
+          li {
+            padding: 0 0 5px 15px;
+            font-size: 15px;
+            background: url("../../img/dot.svg") 0 9px no-repeat;
+            background-size: 4px;
+            &.bg-list-title {
+              padding: 0;
+              background: none;
+            }
+          }
+        }
+      }
+      .gal-container {
+        .gal-item {
+          &.single {
+            .box {
+              a {
+                position: relative;
+                .btn-wrap {
+                  width: 100%;
+                  @include flex(center,
+                  center,
+                  row);
+                  span {
+                    width: 200px;
+                    height: 35px;
+                    display: block;
+                    background: #1E2330;
+                    color: white;
+                    @include flex(center,
+                    center,
+                    row);
+                    font-size: 16px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }
