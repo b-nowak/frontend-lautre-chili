@@ -16,7 +16,6 @@
   <link href="style/css/main.css" rel="stylesheet">
   <link href="style/css/nucleo.css" rel="stylesheet">
   <link href="style/css/lightbox.css" rel="stylesheet">
-  <!-- <link href="style/css/gallery.css" rel="stylesheet"> -->
 
   <link rel="apple-touch-icon" sizes="57x57" href="img/fav/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="img/fav/apple-icon-60x60.png">
@@ -629,6 +628,102 @@
                       <!-- panel-group -->
                     </div>
 
+                    <p>
+                      Le prix du voyage inclut une contribution de 50 € en faveur de projets sociaux et écologiques.
+                      <br> Au cas où le nombre minimum de participants ne serait pas atteint, nous nous réservons le droit d’annuler
+                      le voyage au plus tard 32 jours avant le début du séjour.
+                    </p>
+
+                    <!-- Gray box -->
+                    <div class="bg-list-wrap">
+                      <ul class="bg-list-item list-unstyled">
+                        <li class="bg-list-title">
+                          <h4>Temps forts
+                            <span class="dash"></span>
+                          </h4>
+                        </li>
+                        <li>
+                          Les vols long-courrier à partir/jusqu’à Paris, en classe économique (autres aéroports de départ possibles avec suppléments
+                          de prix)
+                        </li>
+                        <li>
+                          Les vols intérieurs en classe économique
+                        </li>
+                        <li>
+                          Les taxes d’aéroports
+                        </li>
+                        <li>
+                          Une (bonne) nuit en autocar-couchettes
+                        </li>
+                        <li>
+                          Toutes les sorties en bateau mentionnées dans le circuit
+                        </li>
+                        <li>
+                          Tout autre moyen de transport mentionné dans le circuit, privé ou public
+                        </li>
+                        <li>
+                          Toutes les nuits en chambre double dans les hébergements sélectionnés sauf mention contraire dans le programme
+                        </li>
+                        <li>
+                          Un accompagnateur de voyage francophone L’Autre Chili
+                        </li>
+                        <li>
+                          En complément, des guides locaux tout au long du circuit
+                        </li>
+                        <li>
+                          Tous les repas inclus dans le programme
+                        </li>
+                        <li>
+                          Une dégustation de vin chilien
+                        </li>
+                        <li>
+                          Les frais d‘entrée pour toutes les prestations incluses dans le circuit
+                        </li>
+                        <li>
+                          Un carnet de route avec les documents de voyage, des informations complètes et les indispensables à emporter
+                        </li>
+                        <li>
+                          Étiquettes bagages – L’Autre Chili
+                        </li>
+                        <li>
+                          Une contribution L’Autre Chili à hauteur de 50 € au Centro de Grabación para Ciegos de Viña del Mar
+                        </li>
+                        <li>
+                          A chacun, beaucoup de fun et de nouvelles expériences !
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- Gray box -->
+                    <div class="bg-list-wrap">
+                      <ul class="bg-list-item list-unstyled">
+                        <li class="bg-list-title">
+                          <h4>En option
+                            <span class="dash"></span>
+                          </h4>
+                        </li>
+                        <li>
+                          Supplément chambre individuelle | 699 € par personne
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- Gray box -->
+                    <div class="bg-list-wrap">
+                      <ul class="bg-list-item list-unstyled">
+                        <li class="bg-list-title">
+                          <h4>Le prix ne comprend pas
+                            <span class="dash"></span>
+                          </h4>
+                        </li>
+                        <li>
+                          Les boissons prises pendant les repas inclus
+                        </li>
+                        <li>
+                          Les pourboires
+                        </li>
+                      </ul>
+                    </div>
 
                     <div class="table-wrap">
                       <h4>
@@ -644,7 +739,7 @@
                             <th>Guide</th>
                             <th style="min-width: 30%;">Infos</th>
                             <th>Depart</th>
-                            <th style="min-width: 10%;">Btn</th>
+                            <th style="min-width: 10%;"></th>
                           </tr>
                         </thead>
                         <tbody>
@@ -678,32 +773,56 @@
                               <a href="#" class="btn btn-filled reservation small">Réserver</a>
                             </td>
                           </tr>
-
                         </tbody>
                       </table>
                     </div>
 
-                    <div class="form-wrap">
+                    <!-- form -->
+                    <div class="form-wrap spaced">
+                      <h4>
+                        Pas satisfait par ce programme ?
+                      </h4>
+                      <p>
+                        Veuillez nous expliquer pourquoi. Peut-être que vous n’êtes pas convaincu par la durée ou par l’itinéraire du voyage ?
+                      </p>
                       <form action="/action_page.php">
-                        <div class="form-group">
-                          <label for="email">Email address:</label>
-                          <input type="email" class="form-control" id="email">
+                        <div class="col-md-6">
+                          <div class="row">
+                            <div class="form-group clearfix">
+                              <select>
+                                <option data-display="Raison">Raison</option>
+                                <option value="1">Some option</option>
+                                <option value="2">Another option</option>
+                              </select>
+                            </div>
+                          </div>
                         </div>
-                        <div class="form-group">
-                          <label for="pwd">Password:</label>
-                          <input type="password" class="form-control" id="pwd">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="form-group clearfix">
+                              <input type="email" class="form-control h40" id="email" placeholder="Adresse e-mail">
+                            </div>
+                          </div>
                         </div>
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> Remember me</label>
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="form-group clearfix">
+                              <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+                            </div>
+                          </div>
                         </div>
-                        <a href="#" class="btn btn-filled reservation pull-right" type="submit">Envoyer</a>
+                        <div class="col-md-12">
+                          <div class="row">
+                            <a href="#" class="btn btn-filled reservation pull-right" type="submit">Envoyer</a>
+                          </div>
+                        </div>
                       </form>
                     </div>
                   </div>
 
                   <!-- TAB 3 -->
                   <div id="tab-e" class="tab-pane fade">
+                    <!-- Gray box -->
                     <div class="bg-list-wrap">
                       <ul class="bg-list-items list-unstyled">
                         <li>
@@ -760,7 +879,6 @@
                                 </span>
                               </div> -->
                               <img src="img/carteNordEtSudDuChiliExplore.png" alt="" class="img-responsive img-map">
-
                             </a>
                             <div class="modal fade" id="chile" tabindex="-1" role="dialog">
                               <div class="modal-dialog" role="document">
@@ -780,8 +898,86 @@
                           </div>
                         </div>
                       </div>
-
                     </div>
+
+
+                    <div class="accordion">
+
+                      <div class="panel-group" id="days-accordion" role="tablist" aria-multiselectable="true">
+
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="headingOne1">
+                            <h4 class="panel-title">
+                              <a role="button" data-toggle="collapse" data-parent="#days-accordion" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                                <i class="more-less glyphicon glyphicon-plus"></i>
+                                Collapsible Group Item #1
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="collapseOne1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne1">
+                            <div class="panel-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                              non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                              wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+                              et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                              raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
+                              VHS.
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="headingTwo1">
+                            <h4 class="panel-title">
+                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#days-accordion" href="#collapseTwo1" aria-expanded="false"
+                                aria-controls="collapseTwo1">
+                                <i class="more-less glyphicon glyphicon-plus"></i>
+                                Collapsible Group Item #2
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="collapseTwo1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo1">
+                            <div class="panel-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                              non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                              wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+                              et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                              raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
+                              VHS.
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="headingThree1">
+                            <h4 class="panel-title">
+                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#days-accordion" href="#collapseThree1" aria-expanded="false"
+                                aria-controls="collapseThree1">
+                                <i class="more-less glyphicon glyphicon-plus"></i>
+                                Collapsible Group Item #3
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="collapseThree1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree1">
+                            <div class="panel-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                              non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                              wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+                              et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                              raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
+                              VHS.
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <!-- panel-group -->
+                    </div>
+
+
                   </div>
                 </div>
                 <!-- / TAB CONTENT -->
@@ -827,7 +1023,7 @@
                       Votre contact
                     </h4>
                     <div class="sidebar-contact-wrap">
-                      <img src="http://placehold.it/400x400/red" alt="" class="img-responsive img-circle">
+                      <img src="img/audrey.jpg" alt="" class="img-responsive img-circle">
                       <h4>
                         <strong>
                           Audrey Montes
@@ -843,9 +1039,38 @@
                         09h00 - 21h00
                       </h5>
                       <div class="sidebar-contact-button-wrap">
-                        <a href="" class="btn btn-filled color-brown ">Poser une question</a>
+                        <a href="" class="btn btn-filled color-brown" data-toggle="modal" data-target="#contactModal">Poser une question</a>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="sidebar-box sidebar-table">
+                    <h4 class="sidebar-title">
+                      Dates de voyage
+                    </h4>
+                    <div class="table-wrap">
+                      <table class="table table-hover table-striped">
+                        <tbody>
+                          <tr>
+                            <td>10.10.2000</td>
+                            <td>4.999 EUR</td>
+                          </tr>
+                          <tr>
+                            <td>10.10.2000</td>
+                            <td>4.999 EUR</td>
+
+                          </tr>
+                          <tr>
+                            <td>10.10.2000</td>
+                            <td>4.999 EUR</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
                   </div>
                 </div>
               </div>
@@ -858,6 +1083,7 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <div class="pre-footer-wrap">
       <div class="btn-newsletter-wrap">
@@ -995,8 +1221,54 @@
     </div>
     </div>
   </footer>
+
+  <!-- Modal -->
+  <div id="contactModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Contact L'Autre Chili</h4>
+        </div>
+        <img src="img/contact_bg.png" alt="" class="img-responsive">
+        <div class="modal-body clearfix">
+          <div class="form-wrap">
+            <form action="">
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" placeholder="Prénom">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="surname" placeholder="Nom de famille">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="E-mail">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="phone" placeholder="N° de Téléphone">
+              </div>
+
+              <div class="form-group clearfix">
+                <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox">Je souhaite recevoir la Newsletter de L’Autre Chili avec les offres de voyage et des infos sur les pays.</label>
+              </div>
+              <button type="submit" class="btn btn-filled pull-right">Envoyer le message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
   <!-- jQuery Version 1.11.1 -->
   <script src="js/jquery.js"></script>
+  <script src="js/jquery.nice-select.js"></script>
 
   <!-- Bootstrap Core JavaScript -->
   <script src="js/bootstrap.min.js"></script>

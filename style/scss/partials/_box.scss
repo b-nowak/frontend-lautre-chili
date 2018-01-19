@@ -1,0 +1,33 @@
+.bg-list-wrap {
+  background: #eee;
+  .bg-list-item {
+    padding: 15px 35px;
+    margin-bottom: 15px;
+    li {
+      padding: 0 0 5px 15px;
+      font-size: 15px;
+      background: url("../../img/dot.svg") 0 9px no-repeat;
+      background-size: 4px;
+      &.bg-list-title {
+        padding: 0;
+        background: none;
+      }
+    }
+  }
+  .bg-list-items {
+    padding: 15px 35px;
+    ul {
+      margin-bottom: 15px;
+      li {
+        padding: 0 0 5px 15px;
+        font-size: 15px;
+        background: url("../../img/dot.svg") 0 9px no-repeat;
+        background-size: 4px;
+        &.bg-list-title {
+          padding: 0;
+          background: none;
+        }
+      }
+    }
+  }
+}

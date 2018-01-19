@@ -1,80 +1,112 @@
 .sidebar {
+  @include screen(sm) {
+    padding: 20px 0;
+  }
+  .print {
+    padding: 5px 30px;
     @include screen(sm) {
-        padding: 20px 0;
+      padding: 0;
     }
-    .print {
-        padding: 5px 30px;
-        @include screen(sm) {
-            padding: 0;
-        }
-        a {
-            color: $base-brown;
-            font-size: 14px;
-            .printer {
-                background: url("../../img/printer.svg") 50% 50% no-repeat;
-                padding: 10px 8px;
-                background-size: 16px;
-                display: block;
-                float: left;
-            }
-            p {
-                display: block;
-                float: left;
-                padding-left: 10px;
-            }
-        }
+    a {
+      color: $base-brown;
+      font-size: 14px;
+      .printer {
+        background: url("../../img/printer.svg") 50% 50% no-repeat;
+        padding: 10px 8px;
+        background-size: 16px;
+        display: block;
+        float: left;
+      }
+      p {
+        display: block;
+        float: left;
+        padding-left: 10px;
+      }
     }
-    .sidebar-box {
-        margin-bottom: 15px;
-        background: $base-dark-gray;
-        padding: 15px 30px;
+  }
+  .sidebar-box {
+    margin-bottom: 15px;
+    background: $base-dark-gray;
+    padding: 15px 30px;
+    @include flex(center,
+    flex-start,
+    column);
+    .sidebar-title {
+      font-size: 18px;
+      margin: 2px 0 8px;
+      img {
+        height: 25px;
+      }
+    }
+    &.sidebar-trip-details {
+      h5 {
+        display: block;
+        margin: 0;
+        padding: 5px 10px 5px 5px;
+        font-size: 14px;
+        font-family: $base-font;
+        i {
+          margin-right: 7px;
+        }
+      }
+    }
+    &.sidebar-contact {
+      .sidebar-contact-wrap {
         @include flex(center,
-        flex-start,
+        center,
         column);
-        .sidebar-title {
-            font-size: 18px;
-            margin: 2px 0 8px;
-            img {
-                height: 25px;
-            }
+        width: 100%;
+        h4 {
+          font-size: 18px;
+          @include screen(sm) {
+            margin-top: 10px;
+          }
         }
-        &.sidebar-trip-details {
-            h5 {
-                display: block;
-                margin: 0;
-                padding: 5px 10px 5px 5px;
-                font-size: 14px;
-                font-family: $base-font;
-                i {
-                    margin-right: 7px;
-                }
-            }
+        h5 {
+          font-family: $base-font;
+          line-height: 5px;
         }
-        &.sidebar-contact {
-            .sidebar-contact-wrap {
-                @include flex(center,
-                center,
-                column);
-                width: 100%;
-                h4 {
-                    font-size: 18px;
-                    @include screen(sm) {
-                        margin-top: 10px;
-                    }
-                }
-                h5 {
-                    font-family: $base-font;
-                    line-height: 5px;
-                }
-                img {
-                    height: 160px;
-                }
-                .sidebar-contact-button-wrap {
-                    @include screen(sm) {
-                        margin-top: 10px;
-                    }
-                }
-            }
+        img {
+          height: 160px;
         }
+        .sidebar-contact-button-wrap {
+          @include screen(sm) {
+            margin-top: 10px;
+          }
+        }
+      }
     }
+    &.sidebar-table {
+      padding: 0;
+      .sidebar-title {
+        padding: 15px 30px;
+        width: 100%;
+        margin: 0;
+      }
+      .table-wrap {
+        margin: 0;
+        width: 100%;
+        table {
+          margin: 0;
+          tbody {
+            tr {
+              td {
+                width: 50%;
+                text-align: left;
+                font-size: 14px;
+                &:first-of-type {
+                  padding-left: 30px;
+                  color: $base-brown;
+                }
+                &:last-of-type {
+                  text-align: center;
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
