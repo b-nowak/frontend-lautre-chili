@@ -373,15 +373,16 @@ section {
             @include flex (center,
             flex-start,
             column);
-            padding-left: 10px;
+            padding-left: 20px;
             h4 {
-              font-size: 18px;
+              font-size: 16px;
+              font-weight: 700;
               display: block;
               padding: 0;
-              margin: 0;
+              margin: 0 0 4px 0;
             }
             p {
-              font-size: 14px;
+              font-size: 13px;
               display: block;
               padding: 0;
               margin: 0;
@@ -392,8 +393,8 @@ section {
         .single-day-body {
           padding: 20px;
           .text-wrap {
-            font-size: 12px;
-            padding-right: 10px;
+            font-size: 16px;
+            padding-right: 20px;
             text-align: justify;
           }
           .img-wrap {
@@ -407,8 +408,33 @@ section {
           @include flex(space-between,
           center,
           row);
-          .accordion {}
-          .icons-wrap {}
+          .single-day-collapse {
+            cursor: pointer;
+            .single-day-collapse-sign {
+              display: block;
+              padding: 5px 0 5px 37px;
+              font-size: 14px;
+              color: $base-dark;
+              background: url('../../img/circle-plus.png') 0% 0% no-repeat;
+              &.minus {
+                background: url('../../img/circle-minus.png') 0% 0% no-repeat;
+              }
+            }
+          }
+          .icons-wrap {
+            @include flex(center,
+            center,
+            row);
+            .icon {
+              background: url('../../img/circle-plus.png') 0% 0% no-repeat;
+              display: block;
+              padding: 15px;
+              margin-left: 4px;
+            }
+          }
+        }
+        .day-collapse-desc {
+          padding: 20px;
         }
       }
     }
