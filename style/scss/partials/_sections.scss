@@ -343,5 +343,74 @@ section {
     .table-wrap {
       margin-top: 35px;
     }
+    .day-by-day-trip-wrap {
+      width: 100%;
+      .single-day-wrap {
+        width: 100%;
+        border: 1px solid #eee;
+        .single-day-title {
+          width: 100%;
+          background: #eee;
+          @include flex(flex-start,
+          center,
+          row);
+          height: 60px;
+          .day-counter {
+            width: 60px;
+            height: 100%;
+            background: $base-brown;
+            @include flex(center,
+            center,
+            column);
+            .day-caption {
+              color: white;
+            }
+            .day-number {
+              color: white;
+            }
+          }
+          .title-wrap {
+            @include flex (center,
+            flex-start,
+            column);
+            padding-left: 10px;
+            h4 {
+              font-size: 18px;
+              display: block;
+              padding: 0;
+              margin: 0;
+            }
+            p {
+              font-size: 14px;
+              display: block;
+              padding: 0;
+              margin: 0;
+              line-height: 1.4;
+            }
+          }
+        }
+        .single-day-body {
+          padding: 20px;
+          .text-wrap {
+            font-size: 12px;
+            padding-right: 10px;
+            text-align: justify;
+          }
+          .img-wrap {
+            img {
+              width: 100%;
+            }
+          }
+        }
+        .single-day-footer {
+          padding: 20px;
+          @include flex(space-between,
+          center,
+          row);
+          .accordion {}
+          .icons-wrap {}
+        }
+      }
+    }
   }
 }

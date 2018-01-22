@@ -1,6 +1,6 @@
 .table>thead>tr>th {
-    vertical-align: bottom;
-    border-bottom: 1px solid #a5a5a5;
+  vertical-align: bottom;
+  border-bottom: 1px solid #a5a5a5;
 }
 
 .table>tbody>tr>td,
@@ -9,8 +9,12 @@
 .table>tfoot>tr>th,
 .table>thead>tr>td,
 .table>thead>tr>th {
-    padding: 8px;
-    line-height: 1.42857143;
-    vertical-align: top;
-    border-top: 1px solid #eee;
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: middle;
+  border-top: 1px solid #eee;
+}
+
+.table-hover>tbody>tr:hover {
+  background-color: #fafafa;
 }
