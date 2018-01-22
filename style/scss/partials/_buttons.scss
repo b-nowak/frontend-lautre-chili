@@ -1,90 +1,103 @@
 .btn {
-    border-radius: 0;
+  border-radius: 0;
 }
 
 .btn-uppercased {
+  background: none;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 5px 0;
+  margin: 0;
+  font-size: 11px;
+  &:hover {
     background: none;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 5px 0;
-    margin: 0;
-    font-size: 11px;
-    &:hover {
-        background: none;
-        color: $base-blue;
-    }
-    &:focus {
-        background: none;
-        color: $base-blue;
-    }
-    &.underline {
-        border-bottom: 1px solid $base-brown;
-    }
+    color: $base-blue;
+  }
+  &:focus {
+    background: none;
+    color: $base-blue;
+  }
+  &.underline {
+    border-bottom: 1px solid $base-brown;
+  }
 }
 
 .btn-filled {
-    background: $base-blue;
+  background: $base-blue;
+  color: #fff;
+  padding: 10px 40px;
+  margin: 0;
+  font-size: 16px;
+  width: 100%;
+  @include screen(xs) {
+    width: auto;
+  }
+  &:hover {
+    background: lighten($base-blue, 10%);
     color: #fff;
-    padding: 10px 40px;
-    margin: 0;
-    font-size: 16px;
-    width: 100%;
-    @include screen(xs) {
-        width: auto;
-    }
+  }
+  &:focus {
+    background: lighten($base-blue, 10%);
+    color: #fff;
+  }
+  &.color-brown {
+    background: $base-brown;
+    padding: 10px 20px;
+    @include flex(space-between, center, row);
     &:hover {
-        background: lighten($base-blue, 10%);
-        color: #fff;
+      background: lighten($base-brown, 10%);
+      color: #fff;
     }
     &:focus {
-        background: lighten($base-blue, 10%);
-        color: #fff;
+      background: lighten($base-brown, 10%);
+      color: #fff;
     }
-    &.color-brown {
-        background: $base-brown;
-        padding: 10px 20px;
-        @include flex(space-between, center, row);
-        &:hover {
-            background: lighten($base-brown, 10%);
-            color: #fff;
-        }
-        &:focus {
-            background: lighten($base-brown, 10%);
-            color: #fff;
-        }
-        i {
-            font-size: 9px;
-        }
+    i {
+      font-size: 9px;
     }
-    &.reservation {
-        padding: 8px 20px;
-        &.small {
-            padding: 5px 10px;
-            font-size: 13px;
-        }
+  }
+  &.reservation {
+    padding: 8px 20px;
+    &.small {
+      padding: 5px 10px;
+      font-size: 13px;
     }
+  }
+  &.outlined {
+    border: 1px solid $base-blue;
+    color: $base-blue;
+    background: none;
+    &:hover {
+      background: darken($base-blue, 1%);
+      background: none;
+    }
+    &:focus {
+      background: darken($base-blue, 1%);
+      background: none;
+    }
+  }
 }
 
 .btn-newsletter {
-    background: $base-brown;
+  background: $base-brown;
+  color: #fff;
+  font-size: 16px;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 25px;
+  @include screen(sm) {
+    width: auto;
+    margin: -31px 0 40px;
+    padding: 20px 80px;
+  }
+  &:hover {
+    background: lighten($base-brown, 10%);
     color: #fff;
-    font-size: 16px;
-    width: 100%;
-    padding: 20px;
-    margin-bottom: 25px;
-    @include screen(sm) {
-        width: auto;
-        margin: -31px 0 40px;
-        padding: 20px 80px;
-    }
-    &:hover {
-        background: lighten($base-brown, 10%);
-        color: #fff;
-        opacity: 1;
-    }
-    &:focus {
-        background: lighten($base-brown, 10%);
-        color: #fff;
-        opacity: 1;
-    }
+    opacity: 1;
+  }
+  &:focus {
+    background: lighten($base-brown, 10%);
+    color: #fff;
+    opacity: 1;
+  }
 }
