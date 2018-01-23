@@ -3,6 +3,39 @@
 #contactModal {
   .modal-content {
     border-radius: 0;
+    .modal-header {
+      .modal-title {
+        font-family: $base-font;
+        font-size: 18px;
+      }
+    }
+    .img-text-wrap {
+      position: static;
+      padding: 20px;
+      color: #000;
+      @include screen(md) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 58px;
+        right: 30px;
+        width: 200px;
+        padding: 15px;
+        background: rgba(30, 35, 48, 0.82);
+        color: white;
+        height: 208px;
+      }
+      h4 {
+        margin: 0;
+      }
+      .dash {
+        margin: 10px 0;
+      }
+      p {
+        margin: 0;
+      }
+    }
   }
 }
 
