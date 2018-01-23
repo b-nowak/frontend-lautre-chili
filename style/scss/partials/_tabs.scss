@@ -24,9 +24,12 @@
     .bg-list-wrap {
       margin-bottom: 30px;
       .bg-list-items {
-        width: 50%;
         float: left;
+        width: 100%;
         padding: 30px 40px;
+        @include screen(md) {
+          width: 50%;
+        }
         ul {
           margin-bottom: 30px;
           li {
@@ -44,6 +47,11 @@
       .gal-container {
         .gal-item {
           &.single {
+            width: 100%;
+            padding: 0;
+            @include screen(md) {
+              width: 50%;
+            }
             .box {
               a {
                 position: relative;
