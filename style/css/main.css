@@ -843,6 +843,45 @@ a:hover {
   border-radius: 0;
 }
 
+#contactModal .modal-content .modal-header .modal-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+#contactModal .modal-content .img-text-wrap {
+  position: static;
+  padding: 20px;
+  color: #000;
+}
+
+@media only screen and (min-width: 992px) {
+  #contactModal .modal-content .img-text-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 58px;
+    right: 30px;
+    width: 200px;
+    padding: 15px;
+    background: rgba(30, 35, 48, 0.82);
+    color: white;
+    height: 208px;
+  }
+}
+
+#contactModal .modal-content .img-text-wrap h4 {
+  margin: 0;
+}
+
+#contactModal .modal-content .img-text-wrap .dash {
+  margin: 10px 0;
+}
+
+#contactModal .modal-content .img-text-wrap p {
+  margin: 0;
+}
+
 .gal-item {
   overflow: hidden;
   padding: 3px;
@@ -966,8 +1005,8 @@ a:hover {
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  -webkit-transform: translate3d(0, -100px, 0);
-  transform: translate3d(0, -100px, 0);
+  -webkit-transform: translate3d(0, 0px, 0);
+  transform: translate3d(0, 0px, 0);
   opacity: 1;
 }
 
@@ -1350,9 +1389,15 @@ body {
 }
 
 .tab-content #tab-e .bg-list-wrap .bg-list-items {
-  width: 50%;
   float: left;
+  width: 100%;
   padding: 30px 40px;
+}
+
+@media only screen and (min-width: 992px) {
+  .tab-content #tab-e .bg-list-wrap .bg-list-items {
+    width: 50%;
+  }
 }
 
 .tab-content #tab-e .bg-list-wrap .bg-list-items ul {
@@ -1369,6 +1414,17 @@ body {
 .tab-content #tab-e .bg-list-wrap .bg-list-items ul li.bg-list-title {
   padding: 0;
   background: none;
+}
+
+.tab-content #tab-e .bg-list-wrap .gal-container .gal-item.single {
+  width: 100%;
+  padding: 0;
+}
+
+@media only screen and (min-width: 992px) {
+  .tab-content #tab-e .bg-list-wrap .gal-container .gal-item.single {
+    width: 50%;
+  }
 }
 
 .tab-content #tab-e .bg-list-wrap .gal-container .gal-item.single .box a {
@@ -1750,6 +1806,13 @@ section.single-trip .thumbnails-wrap .thumbnail .image-holder {
 
 section.single-trip .thumbnails-wrap .thumbnail .caption {
   flex: 2;
+  padding: 0;
+}
+
+@media only screen and (min-width: 992px) {
+  section.single-trip .thumbnails-wrap .thumbnail .caption {
+    padding: 10px 20px;
+  }
 }
 
 section.single-trip .thumbnails-wrap .thumbnail .caption .title-wrap {
@@ -1907,7 +1970,7 @@ section.single-trip .day-by-day-trip-wrap .single-day-wrap .single-day-title .ti
 }
 
 section.single-trip .day-by-day-trip-wrap .single-day-wrap .single-day-title .title-wrap p {
-  font-size: 13px;
+  font-size: 12px;
   display: block;
   padding: 0;
   margin: 0;
@@ -1919,13 +1982,37 @@ section.single-trip .day-by-day-trip-wrap .single-day-wrap .single-day-body {
 }
 
 section.single-trip .day-by-day-trip-wrap .single-day-wrap .single-day-body .text-wrap {
-  font-size: 16px;
+  font-size: 14px;
   padding-right: 20px;
   text-align: justify;
 }
 
 section.single-trip .day-by-day-trip-wrap .single-day-wrap .single-day-body .img-wrap img {
   width: 100%;
+}
+
+section.single-trip .day-by-day-trip-wrap .single-day-wrap .single-day-body.unfolded .text-wrap h4 {
+  margin: 0;
+}
+
+section.single-trip .day-by-day-trip-wrap .single-day-wrap .single-day-body.unfolded .text-wrap p {
+  font-size: 15px;
+  padding: 0;
+  margin: 0 0 10px 0;
+  display: block;
+}
+
+section.single-trip .day-by-day-trip-wrap .single-day-wrap .single-day-body.unfolded .text-wrap .hotel-category {
+  padding: 3px 0;
+  margin-top: 5px;
+}
+
+section.single-trip .day-by-day-trip-wrap .single-day-wrap .single-day-body.unfolded .text-wrap .hotel-link {
+  padding: 3px 0;
+}
+
+section.single-trip .day-by-day-trip-wrap .single-day-wrap .single-day-body.unfolded .text-wrap .hotel-link a {
+  color: #00CAF8;
 }
 
 section.single-trip .day-by-day-trip-wrap .single-day-wrap .single-day-footer {
@@ -1938,6 +2025,7 @@ section.single-trip .day-by-day-trip-wrap .single-day-wrap .single-day-footer {
 
 section.single-trip .day-by-day-trip-wrap .single-day-wrap .single-day-footer .single-day-collapse {
   cursor: pointer;
+  flex: 1;
 }
 
 section.single-trip .day-by-day-trip-wrap .single-day-wrap .single-day-footer .single-day-collapse .single-day-collapse-sign {
@@ -1945,29 +2033,68 @@ section.single-trip .day-by-day-trip-wrap .single-day-wrap .single-day-footer .s
   padding: 5px 0 5px 37px;
   font-size: 14px;
   color: #1E2330;
-  background: url("../../img/circle-plus.png") 0% 0% no-repeat;
+  background: url("../../img/circle-plus.png") 0 1px no-repeat;
+  background-size: 27px;
 }
 
 section.single-trip .day-by-day-trip-wrap .single-day-wrap .single-day-footer .single-day-collapse .single-day-collapse-sign.minus {
-  background: url("../../img/circle-minus.png") 0% 0% no-repeat;
+  background: url("../../img/circle-minus.png") 0 1px no-repeat;
+  background-size: 27px;
 }
 
 section.single-trip .day-by-day-trip-wrap .single-day-wrap .single-day-footer .icons-wrap {
+  flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+section.single-trip .day-by-day-trip-wrap .single-day-wrap .single-day-footer .icons-wrap .wrap-q {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+section.single-trip .day-by-day-trip-wrap .single-day-wrap .single-day-footer .icons-wrap .wrap-q .icon:first-of-type {
+  margin-left: 0;
+}
+
+section.single-trip .day-by-day-trip-wrap .single-day-wrap .single-day-footer .icons-wrap .wrap-w {
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: row;
 }
 
 section.single-trip .day-by-day-trip-wrap .single-day-wrap .single-day-footer .icons-wrap .icon {
-  background: url("../../img/circle-plus.png") 0% 0% no-repeat;
-  display: block;
+  background: #00CAF8;
+  display: flex;
   padding: 15px;
   margin-left: 4px;
+  border-radius: 25px;
+  height: 25px;
+  width: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+section.single-trip .day-by-day-trip-wrap .single-day-wrap .single-day-footer .icons-wrap .icon i {
+  padding: 0;
+  margin: 0;
+  display: block;
+  line-height: 0;
+  color: #fff;
+  font-size: 17px;
+}
+
+section.single-trip .day-by-day-trip-wrap .single-day-wrap .single-day-footer .icons-wrap .icon i.nc-ic_directions_walk_24px {
+  font-size: 24px;
 }
 
 section.single-trip .day-by-day-trip-wrap .single-day-wrap .day-collapse-desc {
-  padding: 20px;
+  padding: 0 20px;
 }
 
 @media only screen and (min-width: 768px) {

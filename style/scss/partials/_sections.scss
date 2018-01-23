@@ -266,6 +266,10 @@ section {
         }
         .caption {
           flex: 2;
+          padding: 0;
+          @include screen(md) {
+            padding: 10px 20px;
+          }
           .title-wrap {
             @include flex(center,
             center,
@@ -382,7 +386,7 @@ section {
               margin: 0 0 4px 0;
             }
             p {
-              font-size: 13px;
+              font-size: 12px;
               display: block;
               padding: 0;
               margin: 0;
@@ -393,13 +397,36 @@ section {
         .single-day-body {
           padding: 20px;
           .text-wrap {
-            font-size: 16px;
+            font-size: 14px;
             padding-right: 20px;
             text-align: justify;
           }
           .img-wrap {
             img {
               width: 100%;
+            }
+          }
+          &.unfolded {
+            .text-wrap {
+              h4 {
+                margin: 0;
+              }
+              p {
+                font-size: 15px;
+                padding: 0;
+                margin: 0 0 10px 0;
+                display: block;
+              }
+              .hotel-category {
+                padding: 3px 0;
+                margin-top: 5px;
+              }
+              .hotel-link {
+                padding: 3px 0;
+                a {
+                  color: $base-blue;
+                }
+              }
             }
           }
         }
@@ -410,31 +437,66 @@ section {
           row);
           .single-day-collapse {
             cursor: pointer;
+            flex: 1;
             .single-day-collapse-sign {
               display: block;
               padding: 5px 0 5px 37px;
               font-size: 14px;
               color: $base-dark;
-              background: url('../../img/circle-plus.png') 0% 0% no-repeat;
+              background: url('../../img/circle-plus.png') 0 1px no-repeat;
+              background-size: 27px;
               &.minus {
-                background: url('../../img/circle-minus.png') 0% 0% no-repeat;
+                background: url('../../img/circle-minus.png') 0 1px no-repeat;
+                background-size: 27px;
               }
             }
           }
           .icons-wrap {
-            @include flex(center,
+            flex: 1;
+            @include flex(space-between,
             center,
             row);
+            .wrap-q {
+              @include flex(flex-start,
+              center,
+              row);
+              .icon {
+                &:first-of-type {
+                  margin-left: 0;
+                }
+              }
+            }
+            .wrap-w {
+              @include flex(flex-end,
+              center,
+              row);
+            }
             .icon {
-              background: url('../../img/circle-plus.png') 0% 0% no-repeat;
-              display: block;
+              background: $base-blue;
+              display: flex;
               padding: 15px;
               margin-left: 4px;
+              border-radius: 25px;
+              height: 25px;
+              width: 25px;
+              justify-content: center;
+              align-items: center;
+              i {
+                padding: 0;
+                margin: 0;
+                display: block;
+                line-height: 0;
+                color: #fff;
+                font-size: 17px;
+                &.nc-ic_directions_walk_24px {
+                  font-size: 24px;
+                }
+              }
             }
           }
         }
         .day-collapse-desc {
-          padding: 20px;
+          padding: 0 20px;
         }
       }
     }
